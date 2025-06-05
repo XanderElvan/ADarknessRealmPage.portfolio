@@ -1,0 +1,823 @@
+ body {
+     background-color: black;
+     padding-top: 60px;
+     padding-bottom: 40px;
+ }
+
+ /* Main Web Page content formatting */
+
+ .container {
+     display: flex;
+     flex-direction: column;
+     height: 100vh;
+     width: 100vw;
+     
+    
+ }
+
+ .worlds-container {
+   display: inline-flex;
+   flex-direction: row;
+   height: 100vh;
+   width: 100vw;
+   background-image: url(./images/Home\ background.jpg);
+   margin: 5%;
+ }
+
+ .example-planets {
+   height: 35vh;
+   width: 30vw;
+   padding: 5%; 
+   margin-top: 5%;
+   margin-left: 3%;
+   border: 4px solid  white;
+   border-radius: 50%;
+ }
+
+ .entance-audio {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100vw;
+    height: 15%;
+    flex: 1;
+    margin-bottom: 10%;
+    background-color: pink;
+    color: white;
+}
+
+ .entrance-container {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    width: 100vw;
+    height: fit-content;
+    padding-left: 2vw;
+ }
+
+ /*Two Column setup for internal styling: */
+
+ .two-path-1 {
+   
+   width: 40vw;
+    height:fit-content ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-left: 2% ;
+ }
+
+ .two-path-2 {
+   
+   width: 40vw;
+   height: 100vh;
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 1.25rem;
+   font-weight: 500;
+   padding-left: 2%;
+   margin-left: 2% ;
+ }
+
+ .content {
+   width: 30vw;
+   height: fit-content;
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 1.25rem;
+   font-weight: 500;
+   padding-left: 19%;
+   margin-left: 2% ;
+ }
+
+ /*Three-column setup for internal styling: */
+
+ .three-path-1 {
+    width: 30vw;
+    height: 100vh;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-left: 2%;
+    margin-left: 2% ;
+    background-color: red;
+ }
+
+ .three-path-2 {
+    width: 28vw;
+    height: 100vh;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-left: 2%;
+    margin-left: 2% ;
+    background-color: red;
+ }
+
+ .three-path-3 {
+    width: 30vw;
+    height: 100vh;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-left: 2%;
+    margin-left: 2% ;
+    background-color: red;
+ }
+
+ .synopsis {
+    text-align: left;
+    font-size: 0.75em;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 3%;
+    
+
+ }
+
+ .planet-synopsis {
+   text-align: left;
+   font-size: 1.1em;
+   line-height: 1.25;
+   font-weight: 400;
+   text-decoration: none;
+   text-transform: none;
+   font-family: Arial, Helvetica, sans-serif;
+   margin-left: 3%;
+    
+ }
+
+ .title-frame-1 {
+    width: 20vw;
+    height: fit-content;
+    padding: 5%;
+    align-content: center;
+    justify-content: center;
+    background-color: #333;
+    color: antiquewhite;
+ }
+
+ .title-frame-2 {
+    width: 20vw;
+    height: fit-content;
+    padding: 5%;
+    align-content: center;
+    justify-content: center;
+    background-color: #333;
+    color: antiquewhite;
+ }
+
+ .title-frame-3 {
+    width: 20vw;
+    height: fit-content;
+    padding: 5%;
+    align-content: center;
+    justify-content: center;
+    background-color: #333;
+    color: antiquewhite;
+ }
+
+ .entrance-title-1 {
+    font-size: 1.05em;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+ }
+
+ .entrance-title-2 {
+    font-size: 1.05em;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+ }
+
+ .entrance-title-3 {
+    font-size: 1.05em;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+ }
+
+ .picture-frame {
+    border-radius: 5%;
+    justify-content: center;
+    height: 15vw;
+    width: 15vw;
+    image-orientation:from-image;
+ }
+
+ 
+ /* Two-column setup */
+
+ .left-column {
+    align-self: flex-start;
+    display: inline-block;
+    height: 80vh;
+    width: 45vw;
+    background-color: bisque;
+    
+ }
+
+ .right-column {
+    align-self: right;
+    display: inline-block;
+    height: 80vh;
+    width: 45vw;
+    background-color: bisque;
+   
+  
+ }
+
+ .entrance-item {
+    width: 30%;
+    height: 20%;
+    background-color: rgb(75, 34, 5);
+    padding: 2%;
+    font-weight: 600;
+    font-size: 0.8em;
+    color: rgb(219, 151, 151);
+ }
+
+ /* Music Player Styling: */ 
+
+  .music-container {
+    width: 100%;
+    height:100vh;
+    display: flex;
+    background: #333;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+ 
+  .music-player {
+    background: #f6022b;
+    width: 400px;
+    padding: 25px 35px;
+    text-align: center;
+ 
+  }
+ 
+    nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+ 
+  nav .circle {
+    border-radius: 50%;
+    width: 40px;
+    height:40px;
+    line-height: 40px;
+    background: #fff;
+    color: black;
+    font-family: "Font Awesome 6 Free";
+    content: "\f0c9";
+    box-shadow: 0 5px 10px rgba(174, 78, 52, 0.22);
+    /* 
+     
+    */
+  }
+ 
+  .song-img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 9px solid #fff;
+    box-shadow: 0 5px 10px rgba(174, 78, 52, 0.22);
+ 
+  }
+ 
+  #progress {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #7e7b7b;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 40px 0;
+  }
+ 
+  #progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: #565353;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 5px rgba(rgb(103, 103, 81), rgb(76, 107, 76), rgb(115, 115, 164), alpha);
+  }
+ 
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .controls div {
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #565353;
+    box-shadow: 0 10px 20px rgba(rgb(103, 103, 81), rgb(76, 107, 76), rgb(115, 115, 164), alpha);
+    cursor: pointer;
+  }
+ 
+  .controls div:nth-child(2){
+    transform: scale(1.5);
+    background: #565353;
+    color: #fff;
+  }
+
+ /*Poem-specific Formatting */
+
+ .bespart-frame {
+    width: 50vw;
+    height: 50vh;
+    border: saddlebrown;
+    border-radius: 10% solid;
+    align-self: center;
+ }
+ /*General page formatting */
+
+ .navigation-container {
+    width: 80%;
+    margin: 0 auto; /* Center the DIV horizontally */
+    height: 8vh;
+ }
+
+ .audio-desc-container {
+    display: flex;
+    align-self: flex-end;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+ }
+
+ .file-navigation {
+    width: 100vw;
+    height: 20vh;
+    
+    text-align: center;
+ }
+
+ .nav-button-sd {
+    width: 30vw;
+    height: 5vh;
+ }
+
+ .nav-button-1 {
+    width: 30vw;
+    height: 6vh;
+    align-self: left;
+    color: antiquewhite;
+ }
+
+ .nav-button-2 {
+    width: 30vw;
+    height: 6vh;
+    align-self: center;
+ }
+
+ .nav-button-3 {
+    width: 30vw;
+    height: 6vh;
+    align-self: right;
+ }
+ 
+ 
+ 
+ .fixed-header {
+    position: fixed;
+    width: 80vw;
+    height: 8vh;
+    background: antiquewhite; 
+    padding: 10px 0;
+    color: #fff;
+ }
+
+.fixed-footer{
+    width: 100%;
+    position: fixed;        
+    background: #333;
+    padding: 10px 0;
+    color: #fff;
+}
+.fixed-header{
+    top: 0;
+}
+.fixed-footer{
+    bottom: 0;
+}    
+/* Some more styles to beutify this example */
+nav a{
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 25px;
+    display: inline-block;
+}
+.navigation-container p{
+    line-height: 200px; /* Create scrollbar to test positioning */
+}
+ 
+ .top-right-content {
+     display: inline-flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: flex-end;
+     width: 100vw;
+     height: 30%;
+     background-color: red;
+ }
+
+ .audio-container {
+     display: flex;
+     justify-content: flex-end;
+     align-self: flex-end;
+     width: 100%;
+     height: fit-content;
+     position: fixed;
+     flex: 1;
+ }
+
+
+ .title-container {
+     flex-basis: 40%;
+     gap: 5%;
+     background-color: black;
+ }
+
+ /*Red World Code */ 
+
+ .logic-entrance-item {
+    width: 30%;
+    height: 20%;
+    background-color: rgb(75, 34, 5);
+    padding: 4%;
+    font-weight: 600;
+    font-size: 0.6em;
+    color: rgb(219, 151, 151);
+    
+ }
+
+ .julian-entrance-item {
+    width: 30%;
+    height: 20%;
+    background-color: rgba(206, 101, 21, 0.271);
+    padding: 3%;
+    font-weight: 600;
+    font-size: 0.6em;
+    color: rgb(137, 31, 31);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+
+
+ 
+
+ .redworld-item {
+    display: inline-flex;
+    flex-basis: 30%;
+    background-color: yellow;
+    color: red;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+
+ }
+
+ .redworld-item-l {
+    display: inline-flex;
+    flex-basis: 30%;
+    background-color: black;
+    color: red;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    gap: 5%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
+    
+
+ }
+
+ .picture {
+     background-color: pink;
+
+
+ }
+
+ .poem {
+     background-color: #8035db;
+ }
+
+ .item {
+     height: 30%;
+     width: 30%;
+ }
+
+/* Homepage Content */
+ .home-item {
+     background-color: black;
+     width: 40%;
+     height: auto;
+ }
+
+ .hidden-item {
+     display: none;
+     background-color: black;
+     color: red;
+     width: 30%;
+     height: auto;
+
+ }
+
+ 
+
+ .title {
+     font-size: 1.5em;
+     font-weight: 600;
+     text-decoration: underline;
+     text-align: center;
+     justify-content: center;
+ }
+ .song-title {
+   font-weight: bold;
+   padding-left: 1em;
+   font-size: 1.25em;
+ }
+
+ 
+
+ .subheading {
+    font-size: 1.2em;
+    font-weight: 500;
+    text-decoration: underline;
+    text-align: center;
+ }
+
+ .plain {
+   font-style: normal;
+   font-size: 0.9em;
+   text-decoration: none;
+   font-weight: 400;
+ }
+
+ .prompt-desc {
+   font-size: 1.5em;
+   font-weight: 500;
+   text-decoration: none;
+   text-align: left;
+   padding-left: 3%;
+   line-height: 1.5;
+ }
+
+ .world-title {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    background-color: black;
+    font-weight: 400;
+    justify-content: center;
+    align-self: center;
+ }
+
+ .world-entrance {
+    width: 20%;
+    height: fit-content;
+    align-content: flex-start;
+    background-color: yellow;
+    color: red;
+ } 
+
+ .world-desc {
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    font-size: 1em;
+    font-weight: 300;
+    padding: 2%;
+   
+
+ }
+
+ .world-image {
+    width: 90%;
+    height: 90;
+    padding: 2.5%;
+    background-color: black;
+    align-content: center;
+    justify-content: center;
+    padding-left: 18%;
+ }
+
+
+ /* Poetry 'page' and text formatting: */
+
+ .poem-container {
+     display: flex;
+     flex-direction: column;
+     height: 100vh;
+     width: 75%;
+     margin: 5%;
+     flex: 1;
+ }
+
+ .poem-frame {
+    width: 65%;
+    height: 65%;
+    margin-left: 5%;
+        margin-top: 5%;
+        width: 90%;
+        height: fit-content;
+        align-content: center;
+ }
+
+ .content-frame {
+   width: 30vw;
+   height: fit-content;
+ }
+
+ .gd-container {
+   width: 80vw;
+   height: 80vh;
+   background-color: purple;
+   margin-left: 10%;
+   margin-top: 5%;
+ }
+
+ .page {
+     background-color: white;
+     padding: 20px;
+     margin-left: 2em;
+     display: flex;
+     flex-direction: column;
+     height: auto;
+     width: 50%;
+     flex: 1;
+
+ }
+
+ .tab {
+     display: inline-block;
+     margin-left: 4em;
+ }
+
+ .half-tab {
+     display: inline-block;
+     margin-left: 2em;
+ }
+
+ .three-q-tab {
+   display: inline-block;
+   margin-left: 3em;
+ }
+
+ .one-a-half-tab {
+     display: inline-block;
+     margin-left: 6em;
+ }
+
+ .double-tab {
+     display: inline-block;
+     margin-left: 8em;
+ }
+
+ .two-a-half-tab {
+     display: inline-block;
+     margin-left: 10em;
+ }
+
+ .tripple-tab {
+   display: inline-block;
+   margin-left: 12em;
+ }
+ .three-a-half-tab {
+   display: inline-block;
+   margin-left: 14em;
+ }
+
+ .quad-tab {
+   display: inline-block;
+   margin-left: 16em;
+ }
+
+ .four-a-half-tab {
+   display: inline-block;
+   margin-left: 18em;
+ }
+
+ .four-tq-tab {
+   display: inline-block;
+   margin-left: 19em;
+ }
+
+ .five-tab {
+   display: inline-block;
+   margin-left: 20em;
+ }
+
+ .dragon-tab {
+   display: inline-block;
+   margin-left:5.5em ;
+ }
+
+ .italic {
+     font-style: italic;
+ }
+
+ .bold {
+    font-weight: bold;
+    text-decoration: none;
+    
+ }
+
+ .small-italic {
+   font-style: italic;
+   font-size: 0.8rem;
+ }
+
+ .bold-title {
+     font-weight: bold;
+     padding-left: 1em;
+     font-size: 1.25em;
+
+ }
+
+ .bold-title-2 {
+   font-weight: bold;
+     padding-left: 1em;
+     font-size: 1.25em;
+ }
+
+ .bold-line {
+   font-weight: bold;
+   padding-left: 1em;
+ }
+
+ .stanza {
+     padding-left: 1em;
+     font-size: 1rem;
+     font-weight: 400;
+ }
+ .small {
+   padding-left: 1em;
+   font-size: 0.8rem;
+   font-weight: 400;    
+ }
+
+ .underscore {
+     padding-left: 0%;
+ }
+
+ .underline {
+     text-decoration: underline;
+
+ }
+
+ .underlined-title {
+     text-decoration: underline;
+     padding-left: 1em;
+ }
+
+ .purple-text {
+     color: #8035db;
+     font-family: fantasy, 'Arial Narrow', sans-serif;
+     word-spacing: 3px;
+     text-align: justify;
+
+ }
+
+ .purple-title {
+     font-family: Haettenschweiler, 'Arial Narrow', sans-serif;
+     color: #8035db;
+     text-align: center;
+ }
+
+ h4 {
+     font-family: fantasy, 'Arial Narrow', sans-serif;
+     word-spacing: 3px;
+     text-align: left;
+
+ }
+
+ /* Google Fonts */ 
+ .nothing-you-could-do-regular {
+   font-family: "Nothing You Could Do", cursive;
+   font-weight: 400;
+   font-style: normal;
+ }
+ 
