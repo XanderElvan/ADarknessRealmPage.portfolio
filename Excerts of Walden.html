@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excerpts of Walden</title>
+</head>
+<link rel="stylesheet" href="./example_stylesheet.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+<style>
+    .music-container {
+        height: fit-content;
+    }
+     .page {
+        width:fit-content;
+        flex:0.78;
+       
+      }
+
+      .music-player {
+        position: relative;
+        background-image: url(./images/Is\ it\ ringing\ any\ bells\ p1.jpg);
+      }
+
+      .song-title{
+        color: rgb(221, 217, 187);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1.8em;
+      }
+      .subheading {
+        color: rgb(221, 217, 187);
+      }
+
+      .song-img {
+        width: 220px;
+        height: 220px;
+      }
+      .file-navigation {
+            background-color: red;
+            width: 80vw;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            height: fit-content;
+        }
+</style>
+<body>
+    <div class="music-container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+            `,<img src="./images/Excerpts of Walden 2.jpg" alt="picture of Julian's desk" class="song-img">
+            <p class="song-title">Excerpts of Walden</p>
+            <p class="subheading">From the<span class="italic"> A Matter of Time </span>EP</p>
+            <p style="color:rgb(221, 217, 187);"><soan class="fa-solid fa-copyright">Woven  Realms Ltd. 2025</soan></p>
+            <audio id="song">
+                <source src="./songs/Excerpts of Walden.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div>
+                    <i class="fa-solid fa-backward"></i>
+                </div>
+                <div onclick="playPause()">
+                    <i class="fa-solid fa-play" id="ctrlIcon"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-forward"></i>
+                </div>
+            </div>
+        </div>
+        
+        <!--Song lyrice-->
+        <div class="page">
+            <p class="bold-title">Excerpts of Walden</p>
+            <p class="stanza">
+                Here, here is life <br>
+                an experiment <br>
+                to a great extent <br>
+                untried by me. 
+            </p>
+            <p class="stanza">
+                I, shouldn’t talk so much, <br>
+                oh about myself, <br>
+                if there were anyone else <br>
+                I knew as well.
+            </p>
+            <p class="stanza">
+                You can’t kill time without <br>
+                hurting eternity, no how, <br>
+                oh and I know how. <br>
+                I can’t improve the nick of time, <br>
+                notch it on my stick <br>
+                and stand out of line, <br>
+                this time, it’s mine. 
+
+            </p>
+            
+            <p class="stanza">
+                Pain, well I promise to pay <br>
+                a quick visit tomorrow <br>
+                before I die, today.
+                
+            </p>
+            <p class="stanza">
+                So I’ll survey <br>
+                this world through scopes and shapes, <br>
+                never natural eyes; <br>
+                we’re all just hope-lost satellites. 
+                
+            </p>
+            <p class="stanza">
+                Men say that they know many things, <br>
+                but lo! they have only taken wings- <br>
+                if they should feel the springs, <br>
+                surely they’d rise high <br>
+                for an ethereal life.  <br>
+                Love and arts and sciences <br>
+                and a thousand or so appliances- <br>
+                oh the wind that blows <br>
+                is all anybody knows <br>
+                <span class="tab">even Henry Thoreau.</span>
+            </p>
+        </div>
+         <!--Navigation links / buttons-->
+         <div class="file-navigation">
+            <!--Individual button code to work on:
+            <div class="nav-button-sd">
+                <p class="bold-title">To return to the main Example Page, <a href="./Three Paths.html">please click here</a></p>
+            </div>
+            <div class="nav-button-sd">
+                <p>Thank you for reading Mereology!</p>
+            </div>
+            <div class="nav-button-sd">
+                <p>To read 11:11 Butterfles All The Way, <a href="./11:11.html">please click here</a></p>
+            </div>
+            -->
+            <p class="bold-title">Thank you for listening to A Matter of Time E.P.</p>
+    
+            <p class="bold-title">To return to The Red World, <a href="./Red World.html">please click here.</a></p> 
+
+            <p class="bold-title">To return to the Homepage, <a href="./index.html">please click here.</a></p> 
+
+            <!--<p class="bold-title">To access the next piece, <a href="./Excerts of Walden.html"> please clich here.</a></p>-->
+            
+            
+            </div>
+        </div>
+    </div>
+
+   <script>
+
+    let progress = document.getElementById("progress");
+    let song = document.getElementById("song");
+    let ctrlIcon = document.getElementById("ctrlIcon");
+
+    song.onloadedmetadata = function(){
+        progress.max = song.duration;
+        progress.value = song.currentTime;
+
+    }
+
+    function playPause(){
+       if(ctrlIcon.classList.contains("fa-pause")) {
+            song.pause();
+            ctrlIcon.classList.remove("fa-pause");
+            ctrlIcon.classList.add("fa-play");
+       }
+        else{
+            song.play();
+            ctrlIcon.classList.add("fa-pause");
+            ctrlIcon.classList.remove("fa-play");
+        }
+    }
+
+    if(song.play()){
+        setInterval(()=>{
+            progress.value = song.currentTime;
+        },70000);
+    }
+
+    progress.onchange = function(){
+        song.play();
+        song.currentTime = progress.value;
+        ctrlIcon.classList.add("fa-pause");
+        ctrlIcon.classList.remove("fa-play");
+    }
+   </script>
+</body>
+</html>

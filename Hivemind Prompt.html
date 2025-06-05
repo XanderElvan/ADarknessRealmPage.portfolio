@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing from the point of view of a hive mind</title>
+    <link href="./example_stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <style>
+        .music-container {
+        height: fit-content;
+     }
+
+      .page {
+        width:fit-content;
+        flex:0.78;
+       
+      }
+
+
+      .music-player {
+        position: relative;
+        background-image: url(./images/Is\ it\ ringing\ any\ bells\ p1.jpg);
+      }
+
+      .song-title{
+        color: rgb(221, 217, 187);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1.6em;
+        line-height: 1.3;
+      }
+      .subheading {
+        color: rgb(221, 217, 187);
+      }
+
+      .song-img {
+        width: 220px;
+        height: 220px;
+      }
+
+      .prompt-desc {
+        line-height: 1.75;
+      }
+
+      .file-navigation {
+            background-color: red;
+            width: 80vw;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            height: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <div class="music-container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+            <a target="_blank" rel="noopener" href="https://cdn.pixabay.com/photo/2017/09/12/11/56/universe-2742113_1280.jpg"><img src="./images/Particulates-background.jpg" alt="picture of Julian's desk" class="song-img"></a>
+            <p class="song-title">Prompt: Writing from the <br>point of view of a hive mind</p>
+            <p class="subheading">Guided <a href="https://www.poetryfoundation.org/education/glossary/ekphrasis">Ekphrastic</a>Writing</p>
+            <p style="color:rgb(221, 217, 187);">Soundscape <soan class="fa-solid fa-copyright">Woven  Realms Ltd. 2025</soan><br> Image by <a href="https://pixabay.com/users/geralt-9301/">geralt</a></p>
+            <audio id="song">
+                <source src="./soundscapes/Mereology soundscape only.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div>
+                    <i class="fa-solid fa-backward"></i>
+                </div>
+                <div onclick="playPause()">
+                    <i class="fa-solid fa-play" id="ctrlIcon"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-forward"></i>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <!--Song lyrice-->
+        <div class="page">
+            <p class="bold-title">Writing from the point of view of a hive mind</p>
+            <p class="stanza prompt-desc">
+                In this two-part prompt, we invite you to consider a new perspective: <br> 
+                How does it feel to be part of a hive mind- a collective whole, speaking with one voice as you traverse the vacuum of space? 
+
+                <br> <br>
+
+                To place yourself in the perspective of a hive mind, the first exercise will focus on using the first-person plural pronoun, We. <br>
+                Start by considering the photo on your left (If you would like to see an enlarged version, please <a target="_blank" rel="noopener" href="https://cdn.pixabay.com/photo/2017/09/12/11/56/universe-2742113_1280.jpg">click here</a>, or on the photo itself). <br><br> 
+                
+                As you study the photograph, try to answer some of these questions: <br> What can we see? What can we feel- are we warm or cold? Are we excited or anxious? What can we smell? Where are we going? What do we want? Are we safe? Are we in familiar territory? Or somewhere unknown to us? <br> <br>
+
+                Once you feel you have a grasp on your hive mind, please click play on the soundscape to your left, and try to bring the threads of these questions together into a scene or poem, while the soundscape plays around you. <br><br>
+
+                You could start by taking one or two of those questions, those that you felt revealed the most about your hive mind, then see where the soundscape takes you. You can rewind the soundscape as often as you like, or see what has formed after writing to one play through.  Alternatively, if you find the soundscape too distracting, please feel free to consider the photograph again instead, this time focusing on what your hime mind can hear around them; are they alone out here?
+
+                <br> 
+
+                <!--
+                    Once you have a scene, let’s try turning it on its head! Consider the image again, this piece of outer space, and ask yourself the same questions, but this time respond as one singular voice, using the first-person singular pronouns, particularly I, me, and my.
+                <br> <br>
+            Where am I going? Why am I here alone? What do I want? Am I safe? Am I in familiar territory? Or is this somewhere unknown to me? What can I see, touch, taste and smell? 
+                <br>
+            Finally, rewind the soundscape, and respond as that singular voice. How different does the soundscape feel now you are alone, no longer part of a collective whole? 
+                -->
+
+            
+
+                
+            </p>
+            
+        </div>
+
+        <!--Navigation links / buttons-->
+         <div class="file-navigation">
+        <!--Individual button code to work on:
+        <div class="nav-button-sd">
+            <p class="bold-title">To return to the main Example Page, <a href="./Three Paths.html">please click here</a></p>
+        </div>
+        <div class="nav-button-sd">
+            <p>Thank you for reading Mereology!</p>
+        </div>
+        <div class="nav-button-sd">
+            <p>To read 11:11 Butterfles All The Way, <a href="./11:11.html">please click here</a></p>
+        </div>
+        -->
+        <p class="bold-title">To return to The Red World, <a href="./red-world.html"> please click here.</a></p>
+
+        <p class="bold-title">To return to the Homepage, <a href="./index.html">please click here.</a></p> 
+        
+       
+        </div>
+    </div>
+     
+   <script>
+
+    let progress = document.getElementById("progress");
+    let song = document.getElementById("song");
+    let ctrlIcon = document.getElementById("ctrlIcon");
+
+    song.onloadedmetadata = function(){
+        progress.max = song.duration;
+        progress.value = song.currentTime;
+
+    }
+
+    function playPause(){
+       if(ctrlIcon.classList.contains("fa-pause")) {
+            song.pause();
+            ctrlIcon.classList.remove("fa-pause");
+            ctrlIcon.classList.add("fa-play");
+       }
+        else{
+            song.play();
+            ctrlIcon.classList.add("fa-pause");
+            ctrlIcon.classList.remove("fa-play");
+        }
+    }
+
+    if(song.play()){
+        setInterval(()=>{
+            progress.value = song.currentTime;
+        },500);
+    }
+
+    progress.onchange = function(){
+        song.play();
+        song.currentTime = progress.value;
+        ctrlIcon.classList.add("fa-pause");
+        ctrlIcon.classList.remove("fa-play");
+    }
+   </script>
+</body>
+</html>

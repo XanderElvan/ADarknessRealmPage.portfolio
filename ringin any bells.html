@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ringin' Any Bells?</title>
+    Permissions-Policy: autoplay=<allowlist>;
+    <link href="./example_stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    
+    
+    <!--FontAwesome java  embed that didn't work:
+        <script src="https://kit.fontawesome.com/5d9b440e93.js" crossorigin="anonymous"></script>
+
+        <link href="./fontawesome-free-6.7.2-web/css/solid.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+    -->
+    
+
+    <style>
+     .music-container {
+        height: fit-content;
+     }
+
+      .page {
+        width:fit-content;
+        flex:0.78;
+       
+      }
+
+
+      .music-player {
+        position: relative;
+        background-image: url(./images/Is\ it\ ringing\ any\ bells\ p1.jpg);
+      }
+
+      .song-title{
+        color: rgb(221, 217, 187);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1.8em;
+      }
+      .subheading {
+        color: rgb(221, 217, 187);
+      }
+
+      .song-img {
+        width: 220px;
+        height: 220px;
+      }
+
+      .file-navigation {
+            background-color: red;
+            width: 80vw;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            height: fit-content;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="music-container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-arrow-left">
+                        <a href="./Time Machine EP.html"></a>
+                    </i>
+                </div>
+                <div class="circle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+            `,<img src="./images/Is it ringing any bells 1.jpg" alt="picture of Julian's desk" class="song-img">
+            <p class="song-title">Is it ringing any bells?</p>
+            <p class="subheading">From A Matter of Time EP</p>
+            <p style="color:rgb(221, 217, 187);"><soan class="fa-solid fa-copyright">Woven  Realms Ltd. 2025</soan></p>
+            <audio id="song">
+                <source src="./songs/Is it Ringin' any Bells 2025 edit.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div>
+                    <i class="fa-solid fa-backward"></i>
+                </div>
+                <div onclick="playPause()">
+                    <i class="fa-solid fa-play" id="ctrlIcon"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-forward"></i>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <!--Song lyrice-->
+        <div class="page">
+            <p class="bold-title">Is it ringing any bells? Lyrics</p>
+            <p class="stanza">
+                Is it ringing any bells? Like you’ve been here before <br>
+                I couldn’t even tell, I’ve never felt so sure
+            </p>
+            <p class="stanza">
+                Learning as I go, Without you by my side <br>
+                Don’t amount to much, there’s nothing much to life
+            </p>
+            <p class="stanza">
+                Skip further on ahead, but don’t jump to conclusions <br>
+                The odds are stacked against me, but I’ve done the calculations
+            </p>
+            <p class="stanza">
+                <span class="tab">
+                    Time machines, think of them time and time again - <br>
+                    Time machines, flashing before my very eyes <br>
+                    a chance to bring you back to me
+                </span>
+            </p>
+            <p class="stanza">
+                I’ll build this prototype, it works on paper and in theory <br>
+                (with) An hourglass in hand, I can see it all so clearly
+            </p>
+            <p class="stanza">
+                A single grain of rice, squared by 64 <br>
+                I heard the faintest sound, ripples reach the shore 
+            </p>
+            <p class="stanza">
+                <span class="tab">
+                    Time machines, don’t get washed away in the rain - <br>
+                    Time machines, forge a way across these waves - <br>
+                    If the universe abides  
+                </span>
+            </p>
+            <p class="stanza">
+                I just saw my life, inside a drop of rain, <br>
+                All my past selves, missed your presence here today
+            </p>
+            <p class="stanza">
+                “Wouldn't change a thing, I couldnt if I tried”<br>
+                That’s what you said to me, moments before you died 
+            </p>
+            <p class="stanza">
+                There’s whistles and there’s chimes, there’s echoes of your ghost <br>
+                Beyond the point of no return, All I’m left with is _ time
+            </p>
+            <p class="stanza">
+                <span class="tab">
+                    (Time) Machines, the numbers aren’t adding up it seems <br>
+                    (But) Time machines, are a way to crack the code at last <br>
+	                Correct me if I’m wrong
+                </span>
+            </p>
+        </div>
+
+        <!--Navigation links / buttons-->
+         <div class="file-navigation">
+        <!--Individual button code to work on:
+        <div class="nav-button-sd">
+            <p class="bold-title">To return to the main Example Page, <a href="./Three Paths.html">please click here</a></p>
+        </div>
+        <div class="nav-button-sd">
+            <p>Thank you for reading Mereology!</p>
+        </div>
+        <div class="nav-button-sd">
+            <p>To read 11:11 Butterfles All The Way, <a href="./11:11.html">please click here</a></p>
+        </div>
+        -->
+        <p class="bold-title">To access the next piece, <a href="./Excerts of Walden.html"> please clich here.</a></p>
+
+        <p class="bold-title">To return to A Matter of Time, <a href="./Time Machine EP.html">please click here</a></p>
+            
+        <p class="bold-title">To return to The Red World, <a href="./Red World.html">please click here.</a></p>  
+        
+        
+       
+        </div>
+    </div>
+     
+   <script>
+
+    let progress = document.getElementById("progress");
+    let song = document.getElementById("song");
+    let ctrlIcon = document.getElementById("ctrlIcon");
+
+    song.onloadedmetadata = function(){
+        progress.max = song.duration;
+        progress.value = song.currentTime;
+
+    }
+
+    function playPause(){
+       if(ctrlIcon.classList.contains("fa-pause")) {
+            song.pause();
+            ctrlIcon.classList.remove("fa-pause");
+            ctrlIcon.classList.add("fa-play");
+       }
+        else{
+            song.play();
+            ctrlIcon.classList.add("fa-pause");
+            ctrlIcon.classList.remove("fa-play");
+        }
+    }
+
+    if(song.play()){
+        setInterval(()=>{
+            progress.value = song.currentTime;
+        },500);
+    }
+
+    progress.onchange = function(){
+        song.play();
+        song.currentTime = progress.value;
+        ctrlIcon.classList.add("fa-pause");
+        ctrlIcon.classList.remove("fa-play");
+    }
+   </script>
+    
+</body>
+</html>
