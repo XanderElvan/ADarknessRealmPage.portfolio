@@ -18,20 +18,55 @@
  .worlds-container {
    display: inline-flex;
    flex-direction: row;
+   flex-wrap: wrap;
    height: 100vh;
    width: 100vw;
-   background-image: url(./images/Home\ background.jpg);
-   margin: 5%;
+   background-image: url(./images/Home\background.jpg);
+   
  }
 
+ .welcome-desc {
+  display: inline-flex;
+
+  flex: 1 40vh 25vw; 
+  flex-wrap: wrap;
+  gap: 10%;
+ position: relative;
+  border-radius: 2%;
+  border: #333 5px solid;
+  line-height: 1.5;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 1em;
+  background-color: antiquewhite;
+
+ }
+
+ .welcome-text {
+  font-size: 1.1em;
+   line-height: 1.5;
+   font-weight: 400;
+   text-decoration: none;
+   text-transform: none;
+   font-family: Arial, Helvetica, sans-serif;
+   padding-left: 3.5em;
+   padding-right: 1em;
+   font-family: "Lexend", sans-serif;
+ }
+
+ 
+
  .example-planets {
+   flex: 2;
+   flex-wrap: wrap;
    height: 35vh;
    width: 30vw;
    padding: 5%; 
-   margin-top: 5%;
+   margin-top: 1%;
    margin-left: 3%;
    border: 4px solid  white;
    border-radius: 50%;
+   font-family: "Lexend", sans-serif;
  }
 
  .entance-audio {
@@ -59,10 +94,9 @@
  /*Two Column setup for internal styling: */
 
  .two-path-1 {
-   
-   width: 40vw;
-    height:fit-content ;
-    font-family: Arial, Helvetica, sans-serif;
+    width: 40vw;
+    height: 100vh;
+    font-family: "Lexend", sans-serif; 
     font-size: 1.25rem;
     font-weight: 500;
     margin-left: 2% ;
@@ -73,18 +107,29 @@
    width: 40vw;
    height: 100vh;
    text-align: center;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: "Lexend", sans-serif;
    font-size: 1.25rem;
    font-weight: 500;
    padding-left: 2%;
    margin-left: 2% ;
  }
 
- .content {
+ .content-1 {
    width: 30vw;
    height: fit-content;
    text-align: center;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: "Lexend", sans-serif;
+   font-size: 1.25rem;
+   font-weight: 500;
+   padding-left: 19%;
+   margin-left: 2% ;
+ }
+
+  .content-2 {
+   width: 30vw;
+   height: fit-content;
+   text-align: center;
+   font-family: "Lexend", sans-serif;
    font-size: 1.25rem;
    font-weight: 500;
    padding-left: 19%;
@@ -97,7 +142,7 @@
     width: 30vw;
     height: 100vh;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Lexend", sans-serif;
     font-size: 1.25rem;
     font-weight: 500;
     padding-left: 2%;
@@ -109,7 +154,7 @@
     width: 28vw;
     height: 100vh;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Lexend", sans-serif;
     font-size: 1.25rem;
     font-weight: 500;
     padding-left: 2%;
@@ -121,7 +166,7 @@
     width: 30vw;
     height: 100vh;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Lexend", sans-serif;
     font-size: 1.25rem;
     font-weight: 500;
     padding-left: 2%;
@@ -135,7 +180,7 @@
     font-weight: 400;
     text-decoration: none;
     text-transform: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Lexend", sans-serif;
     margin-left: 3%;
     
 
@@ -148,7 +193,7 @@
    font-weight: 400;
    text-decoration: none;
    text-transform: none;
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: "Lexend", sans-serif;
    margin-left: 3%;
     
  }
@@ -352,9 +397,10 @@
  /*General page formatting */
 
  .navigation-container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto; /* Center the DIV horizontally */
-    height: 8vh;
+    height: 10vh;
+    
  }
 
  .audio-desc-container {
@@ -375,29 +421,39 @@
 
  .nav-button-sd {
     width: 30vw;
-    height: 5vh;
+    height: 8vh;
  }
 
  .nav-button-1 {
     width: 30vw;
-    height: 6vh;
+    height: 8vh;
     align-self: left;
     color: antiquewhite;
  }
 
  .nav-button-2 {
     width: 30vw;
-    height: 6vh;
+    height: 8vh;
     align-self: center;
  }
 
  .nav-button-3 {
     width: 30vw;
-    height: 6vh;
+    height: 8vh;
     align-self: right;
  }
  
- 
+  .nav-button-4 {
+    width: 30vw;
+    height: 8vh;
+    align-self: right;
+ }
+
+  .nav-button-5 {
+    width: 30vw;
+    height: 8vh;
+    align-self: right;
+ }
  
  .fixed-header {
     position: fixed;
@@ -405,7 +461,7 @@
     height: 8vh;
     background: antiquewhite; 
     padding: 10px 0;
-    color: #fff;
+    color: black;
  }
 
 .fixed-footer{
@@ -413,7 +469,7 @@
     position: fixed;        
     background: #333;
     padding: 10px 0;
-    color: #fff;
+    color: black
 }
 .fixed-header{
     top: 0;
@@ -558,6 +614,7 @@ nav a{
    font-weight: bold;
    padding-left: 1em;
    font-size: 1.25em;
+   
  }
 
  
@@ -583,6 +640,7 @@ nav a{
    text-align: left;
    padding-left: 3%;
    line-height: 1.5;
+   font-family: "Lexend", sans-serif;
  }
 
  .world-title {
@@ -646,7 +704,17 @@ nav a{
         align-content: center;
  }
 
- .content-frame {
+ .content-frame-1 {
+   width: 30vw;
+   height: fit-content;
+ }
+
+ .content-frame-2 {
+   width: 30vw;
+   height: fit-content;
+ }
+
+ .content-frame-3 {
    width: 30vw;
    height: fit-content;
  }
@@ -660,7 +728,7 @@ nav a{
  }
 
  .page {
-     background-color: white;
+     background-color: antiquewhite;
      padding: 20px;
      margin-left: 2em;
      display: flex;
@@ -668,6 +736,7 @@ nav a{
      height: auto;
      width: 50%;
      flex: 1;
+     font-family: "Lexend", sans-serif;
 
  }
 
@@ -745,9 +814,25 @@ nav a{
     
  }
 
+ .bold-tab {
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 4em;
+ }
+
+ .small-regular {
+   font-size: 0.8rem;
+ }
+
  .small-italic {
    font-style: italic;
    font-size: 0.8rem;
+ }
+
+ .title-1 {
+    padding-left: 1em;
+    font-size: 1.25em;
  }
 
  .bold-title {
@@ -763,6 +848,13 @@ nav a{
      font-size: 1.25em;
  }
 
+ .bold-title-3 {
+   font-weight: bold;
+     padding-left: 1em;
+     font-size: 1.25em;
+ }
+
+
  .bold-line {
    font-weight: bold;
    padding-left: 1em;
@@ -772,6 +864,7 @@ nav a{
      padding-left: 1em;
      font-size: 1rem;
      font-weight: 400;
+     font-family: "Lexend", sans-serif;
  }
  .small {
    padding-left: 1em;
@@ -791,6 +884,45 @@ nav a{
  .underlined-title {
      text-decoration: underline;
      padding-left: 1em;
+ }
+
+ /* Still to Come formatting */ 
+.still-desc {
+   font-weight: 400;
+   font-size: 1.2em;
+   line-height: 1.3;
+   text-decoration: none;
+   padding-left: 1em;
+}
+
+ .still-title {
+      font-weight: bold;
+      padding-left: 1em;
+      font-size: 1.35em;
+ }
+
+ .still-items {
+   font-weight: 400;
+   font-size: 1.2em;
+   line-height: 1.5;
+   text-decoration: none;
+   padding-left: 1em;
+ }
+
+ ul {
+   list-style-type: none;
+   padding-left: 0.5em;
+   margin-bottom: 0;
+   padding-bottom: 0;
+   
+ }
+
+ li {
+  
+   font-size: 1.2em;
+   font-weight: 400;
+   line-height: 1.5;
+   margin-left: 8%;
  }
 
  .purple-text {
@@ -821,3 +953,9 @@ nav a{
    font-style: normal;
  }
  
+  .lexend-poem {
+        font-family: "Lexend", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+  }
