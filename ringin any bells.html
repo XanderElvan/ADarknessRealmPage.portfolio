@@ -7,6 +7,11 @@
     Permissions-Policy: autoplay=<allowlist>;
     <link href="./example_stylesheet.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     
     
     <!--FontAwesome java  embed that didn't work:
@@ -23,10 +28,25 @@
         height: fit-content;
      }
 
+     .fixed-header {
+        position: absolute;
+        background-color:rgb(234, 48, 48) ;
+     }
       .page {
         width:fit-content;
-        flex:0.78;
+        flex:0.85;
+        width: 50%;
        
+      }
+
+      .bold-tab {
+        font-size: 1.25em;
+        font-family: "Lexend", sans-serif;
+        margin-left: 3.45em;
+      }
+
+      .stanza {
+        font-size: 0.9rem;
       }
 
 
@@ -42,6 +62,7 @@
       }
       .subheading {
         color: rgb(221, 217, 187);
+        font-family: "Lexend", sans-serif;
       }
 
       .song-img {
@@ -50,17 +71,42 @@
       }
 
       .file-navigation {
-            background-color: red;
+            background-color: rgb(234, 48, 48);
             width: 80vw;
             margin-top: 5%;
             margin-bottom: 5%;
             height: fit-content;
         }
+           a:link {
+          color: black;
+      }
+      a:visited {
+          color: black;
+      }
+      a:hover {
+          color: antiquewhite;
+      }
+      a:active {
+          color: whitesmoke;
+      }
     </style>
 </head>
 <body>
 
     <div class="music-container">
+          <div class="fixed-header">
+            <div class="navigation-container">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="Orange World.html">Orange World</a>
+                    <a href="Green World.html">Green World</a>
+                    <a href="Red World.html">Red World</a>
+                    <a href="Still to Come.html">Still to Come</a>
+                    <a href="Contact.html">Contact and More</a>
+                </nav>
+            </div>
+        </div>
+        <br>
         <div class="music-player">
             <nav>
                 <div class="circle">
@@ -82,8 +128,8 @@
             <input type="range" value="0" id="progress">
 
             <div class="controls">
-                <div>
-                    <i class="fa-solid fa-backward"></i>
+                <div onclick="restartAudio()">
+                    <i class="fa-solid fa-backward" id="rwdIcon"></i>
                 </div>
                 <div onclick="playPause()">
                     <i class="fa-solid fa-play" id="ctrlIcon"></i>
@@ -98,58 +144,69 @@
         
         <!--Song lyrice-->
         <div class="page">
-            <p class="bold-title">Is it ringing any bells? Lyrics</p>
+            <p class="stanza"><span class="bold-tab">Is it ringing any bells? </span></p>
             <p class="stanza">
-                Is it ringing any bells? Like you’ve been here before <br>
-                I couldn’t even tell, I’ve never felt so sure
+                Is it ringing any bells? Like you’ve been here before? <br>
+                I couldn’t even tell, I’ve never felt so sure.
+
             </p>
             <p class="stanza">
-                Learning as I go, Without you by my side <br>
-                Don’t amount to much, there’s nothing much to life
+                Learning as I go, without you by my side - <br>
+                don’t amount to much, there’s nothing much to life.
+
+                
             </p>
             <p class="stanza">
-                Skip further on ahead, but don’t jump to conclusions <br>
-                The odds are stacked against me, but I’ve done the calculations
+                Skip further on ahead, but don’t jump to conclusions - <br>
+                the odds are stacked against me, but I’ve done the calculations.
+
             </p>
             <p class="stanza">
                 <span class="tab">
-                    Time machines, think of them time and time again - <br>
-                    Time machines, flashing before my very eyes <br>
-                    a chance to bring you back to me
+                    Time Machines - think of them time and time again - <br>
+                    Time Machines - flashing before my very eyes; <br>
+                    a chance to bring you back to me.
+
                 </span>
             </p>
             <p class="stanza">
-                I’ll build this prototype, it works on paper and in theory <br>
-                (with) An hourglass in hand, I can see it all so clearly
+                I’ll build this prototype, it works on paper and in theory - <br>
+                with an hourglass in hand, I can see it all so clearly.
+
             </p>
             <p class="stanza">
-                A single grain of rice, squared by 64 <br>
-                I heard the faintest sound, ripples reach the shore 
+                A single grain of rice, squared by sixty-four - <br>
+I                heard the faintest sound; ripples reach the shore. 
+
             </p>
             <p class="stanza">
                 <span class="tab">
-                    Time machines, don’t get washed away in the rain - <br>
-                    Time machines, forge a way across these waves - <br>
-                    If the universe abides  
+                    Time Machines - don’t get washed away in the rain - <br>
+                    Time Machines - forge a way across these waves, <br>
+                    if the universe abides.
+ 
                 </span>
             </p>
             <p class="stanza">
-                I just saw my life, inside a drop of rain, <br>
-                All my past selves, missed your presence here today
+                I just saw my life - inside a drop of rain - <br>
+                and all my past selves missed your presence here today.
+
             </p>
             <p class="stanza">
-                “Wouldn't change a thing, I couldnt if I tried”<br>
-                That’s what you said to me, moments before you died 
+                <span class="italic">“Wouldn't change a thing, I couldn’t if I tried.”</span><br>
+                That’s what you said to me, moments before you died.
             </p>
             <p class="stanza">
-                There’s whistles and there’s chimes, there’s echoes of your ghost <br>
-                Beyond the point of no return, All I’m left with is _ time
+                There’s whistles and there’s chimes, there’s echoes of your ghost - <br>
+                beyond the point of no return, all I’m left with is: 
+
             </p>
             <p class="stanza">
                 <span class="tab">
-                    (Time) Machines, the numbers aren’t adding up it seems <br>
-                    (But) Time machines, are a way to crack the code at last <br>
-	                Correct me if I’m wrong
+                    Time Machines - the numbers aren’t adding up it seems - <br>
+                    but Time Machines are a way to crack the code at last. <br>
+	                Correct me if I’m wrong...
+
                 </span>
             </p>
         </div>
@@ -214,6 +271,19 @@
         song.currentTime = progress.value;
         ctrlIcon.classList.add("fa-pause");
         ctrlIcon.classList.remove("fa-play");
+        rwdIcon.classlist.add("fa-backward")
+    }
+    function restartAudio() {
+        ctrlIcon.classList.add("fa-backward");
+        song.currentTime = 0;
+        song.rewind();
+        
+    }
+
+    if(song.rewind()){
+        setInterval(()=>{
+            progress.value = song.currentTime = 0;
+        });
     }
    </script>
     

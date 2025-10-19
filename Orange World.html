@@ -5,7 +5,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orange World Home</title>
     <link href="./example_stylesheet.css" rel="stylesheet">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <style>
+/* Smaller Media Quiery Code for testing :
+
+ @media screen and (min-width: 275px) and (max-width: 474px) {
+            
+           .two-path-2 {
+                margin-top:3%; 
+            }
+            
+            .title-frame-1{
+                padding-bottom: 12.59%;
+            }
+
+           
+            .title-frame-2{
+                
+                padding-bottom: 9.15%;
+            }
+        
+    }
+        
+        @media screen and (min-width: 475px) and (max-width: 600px) {
+            
+              .two-path-2 {
+                margin-top:3%; 
+            }
+            
+            .title-frame-1{
+                padding-bottom: 8.59%;
+            }
+
+           
+            .title-frame-2{
+                
+                padding-bottom: 10.15%;
+            }
+            
+        }
+
+        @media screen and (min-width: 601px) and (max-width: 800px) {
+            
+            .two-path-2 {
+                margin-top:3%; 
+            }
+            
+            .title-frame-1{
+                padding-bottom: 6.59%;
+            }
+
+           
+            .title-frame-2{
+                
+                padding-bottom: 10.15%;
+            }
+
+        
+    } 
+        @media screen and (min-width: 801px) and (max-width: 1000px) {
+
+             .two-path-2 {
+                margin-top:3%;
+            }
+           .title-frame-2{
+                padding-bottom: 10.1%;
+            }
+
+            
+        
+        }
+
+        @media screen and (min-width: 1001px) and (max-width:1250px) {
+
+            .two-path-2 {
+                margin-top:3.42%; 
+            }
+            
+            .title-frame-1{
+                padding-bottom: 6.59%;
+            }
+
+           
+            .title-frame-2{
+                
+                padding-bottom: 14.20%;
+            }
+
+             
+
+        }
+
+*/ 
+       
+
+        /* Larger media quiries for later testing: 
+        
+        @media screen and (min-width: 1251px) and (max-width:1650px) {
+
+            .two-path-2 {
+                margin-top:3.42%; 
+            }
+            
+            .title-frame-1{
+                padding-bottom: 8.59%;
+            }
+
+           
+            .title-frame-2{
+                
+                padding-bottom: 14.25%;
+            }
+
+             
+
+        }
+           @media screen and (min-width: 1651px) and (max-width:2650px) {
+
+            .two-path-2 {
+                margin-top:3.42%; 
+            }
+            
+            .title-frame-1{
+                padding-bottom: 8.59%;
+            }
+
+           
+            .title-frame-2{
+                
+                padding-bottom: 14.25%;
+            }
+
+             
+
+        }
+        
+        */
+
+           
         .entrance-container {
             background-image: url(./images/Home\ background.jpg);
         }
@@ -16,23 +155,40 @@
           
         }
         .two-path-1 {
-            background-color: orange;
+            background-image: url(./images/Orange-bg.jpg);
             margin-left: 5%; 
             text-align: center;
+            height: fit-content;
             margin-top: 3%;
+            padding-left: 2%;
        
         }
         .two-path-2 {
-            background-color: orange;
+            background-image: url(./images/Orange-bg.jpg);
             margin-left: 5%; 
             text-align: center;
             height: fit-content;
             margin-top: 3%;
         }
-        .content {
-            background-color: orange;
+        .title-frame-1 {
+            padding-bottom: 10%;
+        }
+
+        .title-frame-2 {
+            margin-bottom: 5%;
+            padding-bottom: 9%;
+        }
+        .content-1 {
+            background-image: url(./images/testOWbg2.jpg);
+            height: 106.65vh;
+            margin-left: 1%;
         }
         
+         .content-2 {
+            background-image: url(./images/testAnabrickroad.jpg);
+            height: 106.65vh;
+            margin-left: 0.75%;
+        }
         a:link {
           color: whitesmoke;
       }
@@ -40,17 +196,18 @@
           color: whitesmoke;
       }
       a:hover {
-          color: purple;
+          color: orange;
       }
       a:active {
           color: whitesmoke;
       }
-      .title-fraame-1 {
+      .title-frame-1 {
         align-self: center;
         text-align: left;
         margin-bottom: 5%;
         padding-bottom: 5%;
       }
+      
 
       .subheading {
         font-size: 1em;
@@ -93,10 +250,19 @@
         margin-left: auto;
         margin-right: auto;
       }
+
+      #kind {
+        height: 25vh;
+        width: 20vw;
+        border: 2px solid rgb(239, 204, 4);
+        margin-left: auto;
+        margin-right: auto;
+      }
     </style>
 </head>
 <body>
     <div class="entrance-container">
+                <!--Navigation Bar:-->
         <div class="fixed-header">
             <div class="navigation-container">
                 <nav>
@@ -104,15 +270,17 @@
                     <a href="Orange World.html">Orange World</a>
                     <a href="Green World.html">Green World</a>
                     <a href="Red World.html">Red World</a>
-                    <a href="Contact.html">Contact Us</a>
+                    <a href="Still to Come.html">Still to Come</a>
+                    <a href="Contact.html">Contact and More</a>
                 </nav>
             </div>
         </div>
+        <br>
         <div class="two-path-1">
             <p class="subheading">Solace in the Graveyard of Consciousness- </p>
-            <p class="synopis">every kind of atom, contrasting the bleak ending shimmers:
+            <p class="synopis">every kind of atom, contrasting <br> the bleak ending shimmers:
             </p>
-            <div class="content">
+            <div class="content-1">
                 <div class="title-frame-1">
                     <p class="entrance-title-1"><a href="./Progressions in Amber.html">Progressions in Amber</a></p>
                     <img src="./images/Progressions1.jpg" id="sunflowers">
@@ -132,16 +300,29 @@
             <p class="synopis">the embodiment of - and journey through - <br> nostalgia, yearning and reflection:
 
             </p>
-            <div class="content">
-                <div class="title-frame-1">
-                    <p class="entrance-title-1"><a href="./Autumn Pavements.html">Autumn Pavements</a></p>
+            <div class="content-2">
+                <div class="title-frame-2">
+                    <p class="entrance-title-2"><a href="./Autumn Pavements.html">Autumn Pavements</a></p>
                     <img src="./images/Autumn Pavements frame.jpg" id="autumn">
+                <br><br>
                 </div>
 
-                <div class="title-frame-1">
+                <div class="title-frame-2">
+                    <br>
+                    <p class="entrance-title-2"><a href="./Kind of Love.html">Kind of Love</a></p>
+                    <img src="./images/Kind of Love 1.jpg" id="kind">
+                    <br>
+                </div>
+                
+                
+                <!-- 
+                    <div class="title-frame-1">
                     <p class="entrance-title-1"><a href="./questions prompt.html">Prompt: <br> Twenty Questions <br> For Your Characters</a></p>
                     <img src="./images/julian desk 3.jpg" id="questions">
                 </div>
+                -->
+
+                
             </div>
         </div>
         <!--

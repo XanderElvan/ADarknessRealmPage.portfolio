@@ -9,37 +9,182 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     
     <style>
+        /* Media Q's for later use:
+         @media screen and (max-width: 474px) {
+            
+            .stanza {
+                padding-left: 0.3em;
+                font-size: 0.4rem;
+                font-weight: 200;
+            }
+
+            .underscore {
+                font-size: 0.35rem;
+                font-weight: 200;
+            }
+        
+            .bold-title {
+                font-size: 0.7rem;
+            }
+    }
+        
+        @media screen and (min-width: 475px) and (max-width: 600px) {
+            
+                .stanza {
+                    padding-left: 0.4em;
+                    font-size: 0.55rem;
+                    font-weight: 200;
+                }
+
+                .underscore {
+                font-size: 0.4rem;
+                font-weight: 200;
+            }
+
+                .bold-title {
+                font-size: 0.65rem;
+            }
+            
+        }
+
+        @media screen and (min-width: 601px) and (max-width: 800px) {
+            
+            .stanza {
+                padding-left: 0.6em;
+                font-size: 0.6rem;
+                font-weight: 200;
+            }
+
+            .underscore {
+                font-size: 0.6rem;
+                font-weight: 200;
+            }
+
+           
+        }
+
+        @media screen and (min-width: 801px) and (max-width: 1000px) {
+
+           .example-planets{
+                height: 40vh;
+                width: 30vw;
+            }
+
+            .welcome-desc {
+                height: 50vh;
+            }
+
+            .fixed-header {
+                width: 90vw;
+            }
+        
+        }
+
+        @media screen and (min-width: 1001px) and (max-width:1250px) {
+
+            .example-planets{
+                height: 45vh;
+                width: 35vw;
+            }
+
+             .fixed-header {
+                width: 94vw;
+            }
+
+        }
+        
+        */ 
+
+        
+        .worlds-container {
+            background-image: url(./images/Home\ background.jpg);
+            height: fit-content;
+        }
+
+        .lexend-poem {
+        font-family: "Lexend", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+                                        }
+
+        .fixed-header {
+            width: 95vw;
+            color: black;
+            margin-right: 5%;
+            margin-left: 3%;
+            position: absolute;
+        }
+
+        .welcome-desc {
+            position: relative;
+            font-family: "Lexend", sans-serif;
+            font-size: 0.9em;
+            height: 50vh;
+        }
+
+       .welcome-text {
+        line-height: 2;
+        font-family: "Lexend", sans-serif;
+       }
+        .top-right-content{
+            background-color: antiquewhite;
+            justify-content: flex-start;
+            padding-top: 1em;
+            padding-left: 3em;
+            width: 80vw;
+        }
+
+        .audio-container {
+            width:80%;
+            position: absolute;
+        }
+
         .example-planets {
             margin-top: 10%;
+            margin-bottom: 10%;
+            height: 40vh;
+            width: 30vw;
+            font-family: "Lexend", sans-serif;
             
         }
 
         .bold-title {
-            font-size: 1.25em;
+            font-size: 1.15em;
             text-decoration: underline;
+            
         }
 
         .bold-title-2  {
-            font-size: 1.1em;
+            font-size: 1.2em;
             padding-left: 0.5em;
         }
 
+        .bold-title-3  {
+            font-size: 1.05em;
+            padding-left: 0.35em;
+        }
+
         .planet-synopsis {
-            font-size: 0.9em;
+            font-size: 0.85em;
+            font-family: 'Lexend', sans-serif;
+            line-height: 1.5;
         }
         a:link {
-          color: black;
+          color:black;
       }
       a:visited {
           color: black;
       }
       a:hover {
-          color: purple;
+          color: darkblue;
+          
       }
       a:active {
-          color: whitesmoke;
+          color: gold;
       }
 
    .edu-au-vic-wa-nt-guides-redworld {
@@ -51,8 +196,9 @@
     </style>
 </head>
 <body>
+
     <div class="worlds-container">
-        <!--Navigation Bar:-->
+              <!--Navigation Bar:-->
         <div class="fixed-header">
             <div class="navigation-container">
                 <nav>
@@ -60,31 +206,54 @@
                     <a href="Orange World.html">Orange World</a>
                     <a href="Green World.html">Green World</a>
                     <a href="Red World.html">Red World</a>
-                    <a href="Contact.html">Contact Us</a>
+                    <a href="Still to Come.html">Still to Come</a>
+                    <a href="Contact.html">Contact and More</a>
                 </nav>
             </div>
         </div>
+        <!--Welcome synopsis / message:
+        
+        -->
+        <div class="welcome-desc">
+             <div class="top-right-content">
+            <p class="bold-title">Welcome to The Darkness Realm Example Pages:</p>
+            <div class="audio-container">
+                <audio controls>
+                    <source src="./Readings/Example Page Welcome.mp3" type="audio/mp3"> 
+                   
+                    If you are seeing this text, your browser does not currently support our audio players. The cookies required for audio to play may currently be disabled. You can review your Cookies settings here: failing that, please feel free to contact us for assistance.
+                </audio>
+            </div>
+        </div>
+            <p class="welcome-text">
+                Here, poetry, songs and soundscapes intertwine to create combined arts pieces and prompts. <br>  Below are three worlds, each with their own themes, characters and sound. <br> 
+                
+                Where will you choose to start?
+            </p>
+        </div>
+        
         <!--Links to each world:-->
         <div class="example-planets" style="background-color: orange;">
-            <p class="bold-title" style="font-family: Nothing You Could Do;">
+            <p class="bold-title-2" style="font-family: Nothing You Could Do;">
                 <a href="./Orange World.html">
                     The Orange World
                 </a>
             </p>
             <p class="planet-synopsis">
-                From molecular-levels, <br>to sentimental memories, <br> to cosmic-giants overhead - this world is the scope of <br> all things.
+                From molecular-levels, <br>to sentimental memories, <br> to cosmic-giants overhead - this world <span class="italic">is</span> the scope <br> of  all things.
             </p>
         </div>
 
         <div class="example-planets" style="background-color: rgb(149, 183, 99);">
-            <p class="bold-title-2" style="font-family: Audiowide, sans-serif;">
+            <p class="bold-title-3" style="font-family: Audiowide, sans-serif;">
                 <a href="./Green World.html">
                     The Green World
                 </a>
             </p>
             <p class="planet-synopsis">
-                Binary green numbers are the language of this universe, in all possible combinations. <br> 
+                Binary green numbers are <br> the language of <span class="underline">all</span> that is, <br> in <span class="underline">all</span> possible combinations. <br>
                 What is a real simulation? 
+
             </p>
         </div>
 
@@ -93,7 +262,7 @@
                 <a href="./Red World.html">The Red World</a>
             </p>
             <p class="planet-synopsis">
-                The land of logic, balance and order.<br> A world that has to make sense, but <br> the formula may be wrong.
+                The land of logic, balance and order.<br> A world that <span class="italic">has</span> to make sense, but <br> the formula may be wrong.
 
             </p>
         </div>
