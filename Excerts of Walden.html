@@ -7,15 +7,39 @@
 </head>
 <link rel="stylesheet" href="./example_stylesheet.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 <style>
     .music-container {
         height: fit-content;
-    }
-     .page {
+     }
+
+     .fixed-header {
+        position: absolute;
+        background-color:rgb(234, 48, 48) ;
+        
+        
+     }
+      .page {
         width:fit-content;
-        flex:0.78;
+        flex:0.85;
+        width: 50%;
        
       }
+
+      .bold-tab {
+        font-size: 1.25em;
+        font-family: "Lexend", sans-serif;
+        margin-left: 3.45em;
+      }
+
+      .stanza {
+        font-size: 0.9rem;
+        font-family: "Lexend", sans-serif;
+        font-weight: 400;
+      }
+
 
       .music-player {
         position: relative;
@@ -29,22 +53,50 @@
       }
       .subheading {
         color: rgb(221, 217, 187);
+        font-family: "Lexend", sans-serif;
       }
 
       .song-img {
         width: 220px;
         height: 220px;
       }
+
       .file-navigation {
-            background-color: red;
+            background-color: rgb(234, 48, 48);
             width: 80vw;
             margin-top: 5%;
             margin-bottom: 5%;
             height: fit-content;
         }
+           a:link {
+          color: black;
+      }
+      a:visited {
+          color: black;
+      }
+      a:hover {
+          color: antiquewhite;
+      }
+      a:active {
+          color: whitesmoke;
+      }
 </style>
 <body>
     <div class="music-container">
+        <!--Navigation Bar:-->
+        <div class="fixed-header">
+            <div class="navigation-container">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="Orange World.html">Orange World</a>
+                    <a href="Green World.html">Green World</a>
+                    <a href="Red World.html">Red World</a>
+                    <a href="Still to Come.html">Still to Come</a>
+                    <a href="Contact.html">Contact and More</a>
+                </nav>
+            </div>
+        </div>
+       
         <div class="music-player">
             <nav>
                 <div class="circle">
@@ -64,8 +116,8 @@
             <input type="range" value="0" id="progress">
 
             <div class="controls">
-                <div>
-                    <i class="fa-solid fa-backward"></i>
+                <div onclick="restartAudio()">
+                    <i class="fa-solid fa-backward" id="rwdIcon"></i>
                 </div>
                 <div onclick="playPause()">
                     <i class="fa-solid fa-play" id="ctrlIcon"></i>
@@ -78,54 +130,63 @@
         
         <!--Song lyrice-->
         <div class="page">
-            <p class="bold-title">Excerpts of Walden</p>
+            <p class="bold-tab">Excerpts of Walden</p>
             <p class="stanza">
-                Here, here is life <br>
-                an experiment <br>
-                to a great extent <br>
-                untried by me. 
+                Here; here is life, <br>
+                an experiment, to a great extent, untried by me.
             </p>
             <p class="stanza">
-                I, shouldn’t talk so much, <br>
-                oh about myself, <br>
-                if there were anyone else <br>
-                I knew as well.
+                I shouldn’t talk so much, <br>
+                oh about myself, if there were anyone else I knew as well.
             </p>
             <p class="stanza">
-                You can’t kill time without <br>
-                hurting eternity, no how, <br>
-                oh and I know how. <br>
-                I can’t improve the nick of time, <br>
-                notch it on my stick <br>
-                and stand out of line, <br>
-                this time, it’s mine. 
-
+                <span class="tab">
+                    You can’t kill time without hurting eternity, no how, <br>
+                    oh, and I know how. <br>
+                    I can’t improve the nick of time, <br>
+                    notch it on my stick and stand out of line - <br>
+                    this time: it’s mine.
+                </span>
             </p>
             
             <p class="stanza">
-                Pain, well I promise to pay <br>
-                a quick visit tomorrow <br>
-                before I die, today.
-                
+                Pain, well I promise to pay, <br>
+                a quick visit tomorrow, before I die today.
+
             </p>
             <p class="stanza">
-                So I’ll survey <br>
-                this world through scopes and shapes, <br>
-                never natural eyes; <br>
-                we’re all just hope-lost satellites. 
-                
+                So I’ll survey this world through scopes and shapes - <br>
+                never natural eyes; we’re all hope-lost satellites. 
+
             </p>
+          
             <p class="stanza">
-                Men say that they know many things, <br>
-                but lo! they have only taken wings- <br>
-                if they should feel the springs, <br>
-                surely they’d rise high <br>
-                for an ethereal life.  <br>
-                Love and arts and sciences <br>
-                and a thousand or so appliances- <br>
-                oh the wind that blows <br>
-                is all anybody knows <br>
-                <span class="tab">even Henry Thoreau.</span>
+                <span class="tab">
+                    Men say that they know many things, <br>
+                    but lo, they have only taken wings, <br>
+                    if they should feel the springs, <br>
+                    surely they’d rise high - <br>
+                    for an ethereal life.
+
+                </span>
+
+            </p>
+
+            <p class="stanza">
+                <span class="tab">
+                    Love, and arts, and sciences, <br>
+                    and a thousand or so appliances - <br>
+                    oh, the wind that blows <br>
+                    is all anybody knows; <br>
+                </span>
+                <span class="double-tab">
+                    even Henry Thoreau.
+                </span>
+            </p>
+
+             <p class="stanza">
+                Here is life, <br>
+                an experiment, untried by me.
             </p>
         </div>
          <!--Navigation links / buttons-->
@@ -151,8 +212,10 @@
             
             
             </div>
-        </div>
+
     </div>
+       
+        
 
    <script>
 
@@ -182,7 +245,7 @@
     if(song.play()){
         setInterval(()=>{
             progress.value = song.currentTime;
-        },70000);
+        },2000);
     }
 
     progress.onchange = function(){
@@ -190,6 +253,19 @@
         song.currentTime = progress.value;
         ctrlIcon.classList.add("fa-pause");
         ctrlIcon.classList.remove("fa-play");
+        rwdIcon.classlist.add("fa-backward")
+    }
+    function restartAudio() {
+        ctrlIcon.classList.add("fa-backward");
+        song.currentTime = 0;
+        song.rewind();
+        
+    }
+
+    if(song.rewind()){
+        setInterval(()=>{
+            progress.value = song.currentTime = 0;
+        });
     }
    </script>
 </body>

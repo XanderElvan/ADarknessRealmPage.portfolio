@@ -6,31 +6,44 @@
     <title>Writing from the point of view of a hive mind</title>
     <link href="./example_stylesheet.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <style>
         .music-container {
         height: fit-content;
      }
 
+     .fixed-header {
+        background-color:rgb(234, 48, 48) ;
+        position: relative;
+        margin-bottom: 3%;
+     }
       .page {
-        width:fit-content;
-        flex:0.78;
+        width:70%;
+       
        
       }
 
 
       .music-player {
         position: relative;
-        background-image: url(./images/Is\ it\ ringing\ any\ bells\ p1.jpg);
+        background-image: url(./images/Purposeful\ large.jpg);
       }
 
       .song-title{
-        color: rgb(221, 217, 187);
+        /* Previous Font: 
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1.6em;
+        */
+        color: #f0c107;
+        font-family: "Lexend" , sans-serif;
         font-size: 1.6em;
         line-height: 1.3;
       }
       .subheading {
-        color: rgb(221, 217, 187);
+        color: #f0c107;
+        font-family: "Lexend" , sans-serif;
       }
 
       .song-img {
@@ -42,17 +55,56 @@
         line-height: 1.75;
       }
 
+      .top-right-content {
+        position: absolute;
+        background-color: antiquewhite;
+        height: 15vh;
+        width: 60%;
+      }
+
+
+      .gd-container {
+        margin-left: 3%;
+      }
+
       .file-navigation {
-            background-color: red;
+            background-color: rgb(234, 48, 48);
             width: 80vw;
             margin-top: 5%;
             margin-bottom: 5%;
             height: fit-content;
         }
+          a:link {
+          color: #f0c107;
+      }
+      a:visited {
+          color: #f0c107;
+      }
+      a:hover {
+          color: silver;
+      }
+      a:active {
+          color: whitesmoke;
+      }
     </style>
 </head>
 <body>
     <div class="music-container">
+         <!--Navigation Bar:-->
+        <div class="fixed-header">
+            <div class="navigation-container">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="Orange World.html">Orange World</a>
+                    <a href="Green World.html">Green World</a>
+                    <a href="Red World.html">Red World</a>
+                    <a href="Still to Come.html">Still to Come</a>
+                    <a href="Contact.html">Contact and More</a>
+                </nav>
+            </div>
+        </div>
+        <br> 
+  
         <div class="music-player">
             <nav>
                 <div class="circle">
@@ -62,18 +114,18 @@
                     <i class="fas fa-bars"></i>
                 </div>
             </nav>
-            <a target="_blank" rel="noopener" href="https://cdn.pixabay.com/photo/2017/09/12/11/56/universe-2742113_1280.jpg"><img src="./images/Particulates-background.jpg" alt="picture of Julian's desk" class="song-img"></a>
+            <a target="_blank" rel="noopener" href="https://cdn.pixabay.com/photo/2017/09/12/11/56/universe-2742113_1280.jpg"><img src="./images/Particulates-background.jpg" alt="picture of space" class="song-img"></a>
             <p class="song-title">Prompt: Writing from the <br>point of view of a hive mind</p>
             <p class="subheading">Guided <a href="https://www.poetryfoundation.org/education/glossary/ekphrasis">Ekphrastic</a>Writing</p>
-            <p style="color:rgb(221, 217, 187);">Soundscape <soan class="fa-solid fa-copyright">Woven  Realms Ltd. 2025</soan><br> Image by <a href="https://pixabay.com/users/geralt-9301/">geralt</a></p>
-            <audio id="song">
+            <p class="subheading" style="text-decoration: none; font-size: 1.1em;">Soundscape <soan class="fa-solid fa-copyright">Woven  Realms Ltd. 2025</soan><br> Images by <a href="https://pixabay.com/users/placidplace-25572496/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7709489">Placidplace</a> and <a href="https://pixabay.com/users/geralt-9301/">geralt</a></p>
+            <audio id="song" loop>
                 <source src="./soundscapes/Mereology soundscape only.mp3" type="audio/mpeg">
             </audio>
             <input type="range" value="0" id="progress">
 
             <div class="controls">
-                <div>
-                    <i class="fa-solid fa-backward"></i>
+                <div onclick="restartAudio()">
+                    <i class="fa-solid fa-backward" id="rwdIcon"></i>
                 </div>
                 <div onclick="playPause()">
                     <i class="fa-solid fa-play" id="ctrlIcon"></i>
@@ -88,25 +140,51 @@
         
         <!--Song lyrice-->
         <div class="page">
-            <p class="bold-title">Writing from the point of view of a hive mind</p>
+            
+            
+                <p class="bold-title">Writing from the point of view of a hive mind:</p>
+                
+                <audio controls>
+                    
+                    <source src="Readings/Hivemind audio.mp3" type="audio/mp3"> 
+                    If you are seeing this text, your browser does not currently support our audio players. - insert the rest of the text! 
+                </audio>
+        
+            
             <p class="stanza prompt-desc">
-                In this two-part prompt, we invite you to consider a new perspective: <br> 
-                How does it feel to be part of a hive mind- a collective whole, speaking with one voice as you traverse the vacuum of space? 
+                In this prompt, we invite you to consider a new perspective: 
+                How does it feel to be part of a cosmic hive-mind, speaking with one voice while traversing the vacuum of space? 
 
                 <br> <br>
-
-                To place yourself in the perspective of a hive mind, the first exercise will focus on using the first-person plural pronoun, We. <br>
-                Start by considering the photo on your left (If you would like to see an enlarged version, please <a target="_blank" rel="noopener" href="https://cdn.pixabay.com/photo/2017/09/12/11/56/universe-2742113_1280.jpg">click here</a>, or on the photo itself). <br><br> 
+                This exercise will focus on using the first-person plural pronoun, we, in a stream of consciousness. <br>Please press play on the soundscape below, and observe the images on your left. 
+                (If you would like to see enlarged versions, which will open in a new tab, please <a target="_blank" rel="noopener" href="https://cdn.pixabay.com/photo/2023/01/10/10/47/space-7709489_1280.jpg">click here</a>, and <a target="_blank" rel="noopener" href="https://cdn.pixabay.com/photo/2017/09/12/11/56/universe-2742113_1280.jpg">click here</a>). <br><br> 
                 
-                As you study the photograph, try to answer some of these questions: <br> What can we see? What can we feel- are we warm or cold? Are we excited or anxious? What can we smell? Where are we going? What do we want? Are we safe? Are we in familiar territory? Or somewhere unknown to us? <br> <br>
+                Start writing as soon as you feel able (using the document below if you wish), responding to the stimuli as one, collective 'We.' <br>
+                Use whichever form feels natural to you, the only rule is, don't edit yourself as you go! <br>
+                (The soundscape is set to loop by deafult, so you can leave it playing throughout, or pause at any time.)
+                <br><br>
+                
+                If a starting point would be helpful, try beginning your stream of consciousness, 'We are The Particulates,' or by using some of these phrases: 
+                We see- We feel- We hear- We judge- We must- We make- <br><br> 
 
-                Once you feel you have a grasp on your hive mind, please click play on the soundscape to your left, and try to bring the threads of these questions together into a scene or poem, while the soundscape plays around you. <br><br>
+                Alternativly, consider the following synopsis, and think about what their motivations might be: <br><br>
+                -The Particulates - <br>
+                 / collective judgement / of oneself / observers of all / orbital routines /
+                <br><span class="tripple-tab">restraint from intervention</span> <br><br>  
 
-                You could start by taking one or two of those questions, those that you felt revealed the most about your hive mind, then see where the soundscape takes you. You can rewind the soundscape as often as you like, or see what has formed after writing to one play through.  Alternatively, if you find the soundscape too distracting, please feel free to consider the photograph again instead, this time focusing on what your hime mind can hear around them; are they alone out here?
+                 
+                
+                
 
+               
                 <br> 
 
                 <!--
+                 You could start by taking one or two of those questions, those that you felt revealed the most about your hive mind, then see where the soundscape takes you. You can rewind the soundscape as often as you like, or see what has formed after writing to one play through.  Alternatively, if you find the soundscape too distracting, please feel free to consider the photograph again instead, this time focusing on what your hime mind can hear around them; are they alone out here?
+
+                to start  answer some of these questions: <br> What can we see? What can we feel- are we warm or cold? Are we excited or anxious? What can we smell? Where are we going? What do we want? Are we safe? Are we in familiar territory? Or somewhere new? <br> <br>
+
+                Once you feel you have a grasp on your hive mind, please click play on the soundscape to your left, and try to bring the threads of these questions together into a scene or poem, while the soundscape plays around you. <br><br>
                     Once you have a scene, let’s try turning it on its head! Consider the image again, this piece of outer space, and ask yourself the same questions, but this time respond as one singular voice, using the first-person singular pronouns, particularly I, me, and my.
                 <br> <br>
             Where am I going? Why am I here alone? What do I want? Am I safe? Am I in familiar territory? Or is this somewhere unknown to me? What can I see, touch, taste and smell? 
@@ -121,6 +199,13 @@
             
         </div>
 
+        <div class="gd-container">
+            <iframe src="https://docs.google.com/document/d/1pWY3c8_v4qklJXDOw3AooYJUEF2qOHjao1xwNy9W5qI/edit?tab=t.0/pub?embedded=true"
+            width="100%" height="100%"></iframe>
+        </div>
+
+        
+
         <!--Navigation links / buttons-->
          <div class="file-navigation">
         <!--Individual button code to work on:
@@ -134,8 +219,8 @@
             <p>To read 11:11 Butterfles All The Way, <a href="./11:11.html">please click here</a></p>
         </div>
         -->
+        <p class="bold-title">To return to The Perish, <a href="./The Perish.html">please click here</a></p>
         <p class="bold-title">To return to The Red World, <a href="./red-world.html"> please click here.</a></p>
-
         <p class="bold-title">To return to the Homepage, <a href="./index.html">please click here.</a></p> 
         
        
@@ -178,6 +263,19 @@
         song.currentTime = progress.value;
         ctrlIcon.classList.add("fa-pause");
         ctrlIcon.classList.remove("fa-play");
+        rwdIcon.classlist.add("fa-backward")
+    }
+    function restartAudio() {
+        ctrlIcon.classList.add("fa-backward");
+        song.currentTime = 0;
+        song.rewind();
+        
+    }
+
+    if(song.rewind()){
+        setInterval(()=>{
+            progress.value = song.currentTime = 0;
+        });
     }
    </script>
 </body>

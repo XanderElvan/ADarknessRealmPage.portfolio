@@ -6,12 +6,19 @@
     <title>The Best Part of my Art</title>
 </head>
 <link href="./example_stylesheet.css" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 <style>
-
+    .fixed-header {
+        background-color: red;
+        margin-left: 8.5%;
+    }
     .page {
-        margin-left: 20%;
-        margin-top: 2.2%;
-        width: 47%;
+        margin-left: 15%;
+        margin-top: 2%;
+        width: 60%;
+        background-color: antiquewhite;
                             }
         
     .poem-frame {
@@ -32,9 +39,35 @@
             margin-bottom: 5%;
             height: fit-content;
         }
+           a:link {
+          color: black;
+      }
+      a:visited {
+          color: black;
+      }
+      a:hover {
+          color: antiquewhite;
+      }
+      a:active {
+          color: whitesmoke;
+      }
 </style>
 <body>
     <div id="container">
+         <!--Navigation Bar:-->
+        <div class="fixed-header">
+            <div class="navigation-container">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="Orange World.html">Orange World</a>
+                    <a href="Green World.html">Green World</a>
+                    <a href="Red World.html">Red World</a>
+                    <a href="Still to Come.html">Still to Come</a>
+                    <a href="Contact.html">Contact and More</a>
+                </nav>
+            </div>
+        </div>
+        <br>
         <!--Audio Containers for readings-->
         <div class="top-right-content">
             <p class="bold-title">the best part of my art reading, with soundscape:</p>

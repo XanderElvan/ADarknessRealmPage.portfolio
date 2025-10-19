@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I've taken my time- I'm not where I want to be</title>
     <link rel="stylesheet" href="./example_stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <style>
         @media screen and (max-width: 474px) {
             
@@ -88,16 +91,46 @@
 
         }
         /*Internal styling: */
+        .poem-container {
+            margin: 0;
+        }
+         .fixed-header {
+            margin-left: 9.5%;
+            background-color: rgb(149, 183, 99);
+            position: absolute;
+        }
         .poem-frame {
             height: fit-content;
             width: 90vw;
-            background-image: url(./images/Ive\ taken\ my\ time\ large.jpg);
+          
+            background-image: url(./images/Ive\ Taken\ My\ Time\ 3.jpg);
         }
+        .bold-title {
+            font-family: "Lexend", sans-serif;
+        }
+        .bold-title-2 {
+            padding-left: 5%;
+            font-family: "Lexend", sans-serif;
+            font-size: 1.1em;
+        }
+         .lexend-poem {
+        font-family: "Lexend", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+         }
         .page {
-            margin-left: 20%;
+            margin-left: 17%;
+            width: 53%;
+            font-weight: 400;
+        }
+        .stanza {
+            font-family: "Lexend", sans-serif;
+            font-weight: 400;
         }
         .top-right-content {
             background-color: rgb(149, 183, 99);
+             justify-content: flex-start;
         }
         .file-navigation {
             background-color: rgb(149, 183, 99);
@@ -107,14 +140,42 @@
             height: fit-content;
             
         }
+          a:link {
+          color: black;
+      }
+      a:visited {
+          color: black
+      }
+      a:hover {
+          color: green;
+      }
+      a:active {
+          color: green;
+      } 
+      
 </style>
     
 </head>
 <body>
     
         <!--Tested out what adding both container and poem container divs does for functionality, and I do only need poem-container-->
+
+                  <!--Navigation Bar:-->
+        <div class="fixed-header">
+            <div class="navigation-container">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="Orange World.html">Orange World</a>
+                    <a href="Green World.html">Green World</a>
+                    <a href="Red World.html">Red World</a>
+                    <a href="Still to Come.html">Still to Come</a>
+                    <a href="Contact.html">Contact and More</a>
+                </nav>
+            </div>
+        </div>
+        <br><br>
         <div class="top-right-content">
-            <p class="bold-title">I've taken my time' - with soundscape:</p>
+            <p class="bold-title-2">I've taken my time, I'm not where I want to be- with soundscape:</p>
             <div class="audio-container">
                 <audio controls>
                     <source src="./Readings/I've Taken My Time.mp3" type="audio/mp3"> 
@@ -125,7 +186,7 @@
         </div>
     
         <div class="top-right-content">
-            <p class="bold-title">I've taken my time' - without soundscape:</p>
+            <p class="bold-title-2">I've taken my time, I'm not where I want to be-  without soundscape:</p>
             <div class="audio-container">
                 <audio controls>
                     <source src="./Readings/I've taken my time, I'm not where I want to be- Reading Audio.mp3" type="audio/mp3"> 
@@ -133,7 +194,7 @@
                 </audio>
             </div>
         </div>
-
+        
         <div class="poem-container">
             <!--Written poem:-->
             <div class="poem-frame">
@@ -197,7 +258,7 @@
             
             <!--File navigation-->
             <div class="file-navigation">
-                <p class="bold-title">Thank you for reading I've taken my time, I'm not where I want to be-</p>
+                <p class="bold-title">Thank you for reading the Green World example poems!</p>
             
                 <p class="bold-title">To return to the Homepage, <a href="./index.html">please click here.</a></p> 
             
