@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kind of Love</title>
+    <link href="./example_stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <style> 
+     .fixed-header {
+        position: absolute;
+        background-color:rgb(249, 174, 34) ;
+     }
+         .music-container {
+        height: fit-content;
+     }
+
+      .page {
+        width:fit-content;
+        flex:0.78;
+       
+      }
+
+      .bold-tab {
+        font-size: 1.25em;
+        font-family: "Lexend", sans-serif;
+        margin-left: 3.45em;
+      }
+
+      .music-player {
+        position: relative;
+        background-image: url(./images/testAnaBGSmall.jpg);
+      }
+
+      .song-title{
+        color: black;
+        font-family: "Lexend", sans-serif;
+        font-size: 1.8em;
+      }
+      .song-title {
+        font-family: "Lexend", sans-serif;
+      }
+      .subheading {
+        color: black;
+        font-family: "Lexend", sans-serif;
+      }
+
+      .song-img {
+        width: 220px;
+        height: 220px;
+      }
+
+      #progress {
+        background-color: rgb(249, 174, 34);
+      }
+
+      #progress::-webkit-slider-thumb {
+        color: rgb(105, 72, 40);
+        background-color:rgb(167, 114, 62);
+      }
+
+      .controls div:nth-child(2){
+        background-color:rgb(167, 114, 62);
+      }
+
+      .fa-solid fa-arrow-left {
+        position: fixed;
+      }
+
+      .file-navigation {
+            background-color: rgb(249, 174, 34);
+            width: 80vw;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            height: fit-content;
+        }
+        a:link {
+          color: black;
+      }
+      a:visited {
+          color: black;
+      }
+      a:hover {
+          color: antiquewhite;
+      }
+      a:active {
+          color: whitesmoke;
+      }
+    </style>
+
+</head>
+<body>
+    <div class="music-container">
+             <!--Navigation Bar:-->
+        <div class="fixed-header">
+            <div class="navigation-container">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="Orange World.html">Orange World</a>
+                    <a href="Green World.html">Green World</a>
+                    <a href="Red World.html">Red World</a>
+                    <a href="Still to Come.html">Still to Come</a>
+                    <a href="Contact.html">Contact and More</a>
+                </nav>
+            </div>
+        </div>
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-arrow-left">
+                        <a href="./Orange World.html"></a>
+                    </i>
+                </div>
+                <div class="circle">
+                    <a href="./Autumn Pavements.html"><i class="fas fa-bars"></i></a>
+                </div>
+            </nav>
+            `,<img src="./images/Kind of Love 1.jpg" alt="picture of an aged front door" class="song-img">
+            <p class="song-title">Kind of Love</p>
+            <p class="subheading">From Anastasia Album</p>
+            <p style="color:black;"><soan class="fa-solid fa-copyright">Woven   Realms Ltd. 2025</soan></p>
+            <audio id="song">
+                <source src="./songs/Kinda Love EG.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div onclick="restartAudio()">
+                    <i class="fa-solid fa-backward" id="rwdIcon"></i>
+                </div>
+                <div onclick="playPause()">
+                    <i class="fa-solid fa-play" id="ctrlIcon"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-forward"></i>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <!--Song lyrics-->
+        <div class="page">
+            <p class="bold-tab">Kind of Love</p>
+            <p class="stanza">
+                A worn-down doorbell welcome <br>
+                hums a September entrance. <br>
+                The porch-light not aforementioned <br>
+                is following the knocks of a place I forgot, but <br>
+                that’s just one kind of love - <br>
+                time will find another one.
+
+
+            </p>
+            <p class="stanza">
+                Photos frame recollections; <br>
+                sofa-gone indent-pressings - <br>
+                both blamed my slept-in foundations <br>
+                with a bed that I can shift <br>
+                and you stepped in to make them. <br>
+                Well, we made some kind of love - <br>
+                I saw space form above.
+
+                
+            </p>
+
+            <p class="stanza">
+                <span class="tab">
+                    I am what’s left in the opening moments; <br>
+                    I’m every line that somehow slips away; <br>
+                    I’m every panel that patterns out for your steps; <br>
+                    I’m all that remains, and a day that’s gone to waste. 
+
+                </span>
+            </p>
+            <p class="stanza">
+                A sunrise bus stop shelter; <br>
+                our scheduled park-bench adventures. <br>
+                My slow-adjusting sight receptors <br>
+                are following the mornings that come after cushioned fallings; <br>
+                I fell in some kind of love - <br>
+                with bruises warm to the touch. 
+
+                
+            </p>
+            <p class="stanza">
+                A glass of uncharted waters; <br>
+                I’m filled with filtered-out thoughts, and <br>
+                an ice-cube-tenth of contentment <br>
+                is all that I pretend <br>
+                and I never once intended <br>
+                to give a cold kind of love; <br>
+                my palms are desperately cupped.
+
+            </p>
+
+            <p class="stanza">
+               <span class="tab">
+                    Well, I’m no stranger to the strongest cost of kindness; <br>
+                    my sudden blueprints were encountered in a single act; <br>
+                    my distant viewpoint, out-focused and unaccounted for; <br>
+                    looking back, I’ll pay it forward a little more.
+               </span>
+            </p>
+            
+        </div>
+
+        <!--Navigation links / buttons-->
+         <div class="file-navigation">
+        <!--Individual button code to work on:
+        <div class="nav-button-sd">
+            <p class="bold-title">To return to the main Example Page, <a href="./Three Paths.html">please click here</a></p>
+        </div>
+        <div class="nav-button-sd">
+            <p>Thank you for reading Mereology!</p>
+        </div>
+        <div class="nav-button-sd">
+            <p>To read 11:11 Butterfles All The Way, <a href="./11:11.html">please click here</a></p>
+        </div>
+        -->
+        <p class="bold-title">To return to The Orange World, <a href="./Orange World.html">please click here.</a></p> 
+
+        <p class="bold-title">To return to the Homepage, <a href="./index.html">please click here.</a></p> 
+            
+        </div>
+    </div>
+     
+   <script>
+
+    let progress = document.getElementById("progress");
+    let song = document.getElementById("song");
+    let ctrlIcon = document.getElementById("ctrlIcon");
+
+    song.onloadedmetadata = function(){
+        progress.max = song.duration;
+        progress.value = song.currentTime;
+
+    }
+
+    function playPause(){
+       if(ctrlIcon.classList.contains("fa-pause")) {
+            song.pause();
+            ctrlIcon.classList.remove("fa-pause");
+            ctrlIcon.classList.add("fa-play");
+       }
+        else{
+            song.play();
+            ctrlIcon.classList.add("fa-pause");
+            ctrlIcon.classList.remove("fa-play");
+        }
+    }
+
+    if(song.play()){
+        setInterval(()=>{
+            progress.value = song.currentTime;
+        },500);
+    }
+
+    progress.onchange = function(){
+        song.play();
+        song.currentTime = progress.value;
+        ctrlIcon.classList.add("fa-pause");
+        ctrlIcon.classList.remove("fa-play");
+        rwdIcon.classlist.add("fa-backward")
+    }
+    function restartAudio() {
+        ctrlIcon.classList.add("fa-backward");
+        song.currentTime = 0;
+        song.rewind();
+        
+    }
+
+    if(song.rewind()){
+        setInterval(()=>{
+            progress.value = song.currentTime = 0;
+        });
+    }
+   </script>
+    
+</body>
+</html>

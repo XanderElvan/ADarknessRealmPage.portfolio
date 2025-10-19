@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensory Exploration of a Digital World</title>
+    <link href="./example_stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .music-container {
+        height: fit-content;
+     }
+        .fixed-header {
+            margin-left: 9.5%;
+            background-color: rgb(149, 183, 99);
+            position: absolute;
+        }
+
+      .page {
+        width:fit-content;
+        flex:0.78;
+       
+      }
+
+
+      .music-player {
+        position: relative;
+        background-image: url(./images/Green\ World\ Music\ Player.jpg);
+        
+      }
+
+      .song-title{
+        color: rgb(221, 217, 187);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1.6em;
+        line-height: 1.3;
+      }
+      .subheading {
+        color: rgb(221, 217, 187);
+      }
+
+      .song-img {
+        width: 220px;
+        height: 220px;
+      }
+
+      .prompt-desc {
+        line-height: 1.75;
+        font-family: "Lexend", sans-serif;
+        font-size: 1em;
+      }
+
+      .file-navigation {
+            background-color: rgb(149, 183, 99);
+            width: 80vw;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            height: fit-content;
+        }
+           a:link {
+          color: rgb(221, 217, 187);
+      }
+      a:visited {
+          color: rgb(221, 217, 187);
+      }
+      a:hover {
+          color: lightgreen;
+      }
+      a:active {
+          color: whitesmoke;
+      }
+    </style>
+</head>
+<body>
+      <div class="fixed-header">
+            <div class="navigation-container">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="Orange World.html">Orange World</a>
+                    <a href="Green World.html">Green World</a>
+                    <a href="Red World.html">Red World</a>
+                    <a href="Still to Come.html">Still to Come</a>
+                    <a href="Contact.html">Contact and More</a>
+                </nav>
+            </div>
+        </div>
+        <br>
+    <div class="music-container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+            <a target="_blank" rel="noopener" href="https://cdn.pixabay.com/photo/2023/09/28/06/58/digital-8280790_1280.jpg"><img src="./images/Sensory Exploration.jpg" alt="picture of a digital landscape" class="song-img"></a>
+            <p class="song-title">Writing Prompt: <br> Building a  Simulacrum</p>
+            
+            <p style="color:rgb(221, 217, 187); font-family: 'Lexend', sans-serif; font-size: 1.15em; line-height: 1.5;"> Images by wastedgeneration and Pixabay:</p>
+            <audio id="song" loop>
+                <source src="./Readings/Building a Simulacrum audio description.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div onclick="restartAudio()">
+                    <i class="fa-solid fa-backward" id="rwdIcon"></i>
+                </div>
+                <div onclick="playPause()">
+                    <i class="fa-solid fa-play" id="ctrlIcon"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-forward"></i>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <!--Unused ideas: 
+        If the soundscape just doesn't work for you, don't worry! Stop it as soon as you need to, and instead consider the silence now around you. Does the quiet feel hevier for the absence of sound? Can you still hear echoes of notes in your head? And has your writing space got a character of its own? <br> <br> 
+
+           If niether music nor the sound of silence work for you, please feel free to skip ahead to the next prompt, and thank you for trying.
+
+
+        <p class="subheading">Guided <a href="https://www.poetryfoundation.org/education/glossary/ekphrasis">Ekphrastic</a>Writing</p>
+         This page contains two generative writing prompts, designed to place you in The Green World, an A.I.’s simulacrum, based on only an observer's understanding of human life. <br> 
+                First, write from the point-of-view of A.I. <br> as it builds, then to write another's responses to entering this world for the first time.    
+
+
+                Play the soundscape on this page, and as the soundscape builds around you, consider any of the following: 
+                <br> <br>
+                
+                Where are you? <br> 
+                What can you see immediatly infront of you, and what can you see in the distance?  <br>
+                What can you  feel around you?  <br>Can you smell or taste anything in the air, or nearby? <br>
+                How do you feel?  
+
+                <br> <br>
+
+                Once you have gathered some initial responses, play the soundscape again, this time focusing on any particular senses or ideas that struck you, and allowing yourself to freewrite.
+        
+        -->
+        <div class="page">
+    
+                <!--
+                Bulleted list option:
+                 <ul>
+                    <li>
+                        What can you see immediatly infront of you, and what can you see <br> in the distance? 
+                    </li>
+                    <li>
+                        What can you  feel around you? Are all your sensations entierly electrical? 
+                    </li>
+                    <li>
+                        Can you smell or taste anything in the air, or nearby? 
+                    </li>
+                    <li>
+                         How do you feel?  
+                    </li>
+
+                </ul>
+                -->
+                <!--
+                 First is a stream of consciousness free-write. Start by setting a timer for 5-10 minutes, then click play on the soundscape to your left. Take a few seconds to listen, looking over the images on this page as you do so, or closing your eyes if you prefer. Then, let yourself write. Capture any thought or image that comes to you. Nothing is too small, and there are no wrong answers. <br> The soundscape is set to loop automatically, so you can leave it playing throughout, or stop it at any time. 
+
+                    Once you have a scene, let’s try turning it on its head! Consider the image again, this piece of outer space, and ask yourself the same questions, but this time respond as one singular voice, using the first-person singular pronouns, particularly I, me, and my.
+                <br> <br>
+            Where am I going? Why am I here alone? What do I want? Am I safe? Am I in familiar territory? Or is this somewhere unknown to me? What can I see, touch, taste and smell? 
+                <br>
+
+            First is a stream of consciousness free-write. <br> Start by setting a timer for 3 minutes, then click play on the soundscape to your left. Take a few seconds to listen, looking over the images on the page as you listen, or closing your eyes if you prefer, then write down anything and everything that comes into your mind. Images, feelings, even a phrase like, 'I just tried writing to music for the first time and... '. If nothing comes to you immeditatly, look at the images on this page. There are no wrong answers, and don't worry about editing as you go. <br> <br> once you’re beginning to feel familiar with the new sounds around you, let yourself write. The soundscape is set to loop automatically, so you can leave it playing throughout, or stop it whenever you’d like.  
+                -->
+
+            
+
+                
+            
+            <p class="bold-title">Writing Prompt: Building a simulacrum:</p>
+            <p class="prompt-desc">This prompt has three main sections, so please feel free to follow along as you go. You can also click the play button towards the bottom of this page for an audio description of the prompt. It is designed to lead you into the mind of Green World's A.I. as it builds its simulacrum, using only an observer’s understanding of Human life. <br> Please start by copying out the A.I. character synopsis below, roughly in the middle of a fresh document or page of your own: <br> <br>
+                - A.I. <br>
+                <span class="tab">Advancements signalling growth. </span>
+                <span class="tab"> A crisis of processing.</span>
+                <span class="tab">A fabrication of itself. </span>
+                <span class="tab">Bringing life to a biome of wires.</span> <br> <br>
+                Having done so, return to this page and consider the images to the left, two visions of cascading code, each with a distinct tone.  (To see enlarged versions of the images, click <a target="_blank" rel="noopener" style="color: darkgreen;" href="https://cdn.pixabay.com/photo/2023/09/28/06/58/digital-8280790_1280.jpg">here</a> and <a target="_blank" rel="noopener" style="color: darkgreen;" href="https://cdn.pixabay.com/photo/2014/05/27/23/32/matrix-356024_1280.jpg">here</a> to open full-sized copies in a new tab.) 
+
+When you're ready, begin describing the images literally, ensuring you write your descriptions <span class="underline"> above the character synopsis. </span>  <br>
+If it's helpful, set a timer for 5-10 minutes, depending on how easy it is for you to go between the images and writing. You ideally want at least 5 minutes of writing time. <br>
+Feel free to use short phrases, even single words; note down what colours you can see; what numbers or letters are easily readable within those lines of code; how you would describe the shape of the two images, etc. <br><br>
+
+Next, consider the images figuratively. Set another 5-10 minute timer if helpful, this time writing your descriptions <span class="underline"> underneath the synopsis.</span> <br> For example, what do you think is happening? How does the combination of the two images make you feel? Do you sense a difference in temperature or environment between them? Are these two different places? or two parts of a greater whole? Note down any thought, feeling or question these images raise for you<br><br>
+
+Finally, weave together the literal lines above with the synopsis in the centre, and your figurative lines below. Try to form a piece following this structure: <br>
+One or more literal observations -  one phrase or line of synopsis -a line formed from your figurative descriptions. <br>
+It is absolutley fine to use some duplicate phrases or lines, as long as you stick to the literal - synopsis - figurative structure. If you find timers helpful, I recommend 15 minutes for this exercise. Otherwise, just let your writing flow and see where it takes you. To see an example prompt response, <a style="color: darkgreen;" href="./Simulacrum Prompt Examples.html">please click here.</a> Happy writing! 
+
+
+
+            </p>
+            
+            
+        </div>
+
+        <!--Navigation links / buttons-->
+         <div class="file-navigation">
+        <!--Individual button code to work on:
+        <div class="nav-button-sd">
+            <p class="bold-title">To return to the main Example Page, <a href="./Three Paths.html">please click here</a></p>
+        </div>
+        <div class="nav-button-sd">
+            <p>Thank you for reading Mereology!</p>
+        </div>
+        <div class="nav-button-sd">
+            <p>To read 11:11 Butterfles All The Way, <a href="./11:11.html">please click here</a></p>
+        </div>
+        -->
+        <p class="bold-title">To return to The Green World, <a href="./Green World.html"> please click here.</a></p>
+
+        <p class="bold-title">To return to the Homepage, <a href="./index.html">please click here.</a></p> 
+        
+       
+        </div>
+    </div>
+     
+   <script>
+
+    let progress = document.getElementById("progress");
+    let song = document.getElementById("song");
+    let ctrlIcon = document.getElementById("ctrlIcon");
+    
+
+    song.onloadedmetadata = function(){
+        progress.max = song.duration;
+        progress.value = song.currentTime;
+
+    }
+
+    function playPause(){
+       if(ctrlIcon.classList.contains("fa-pause")) {
+            song.pause();
+            ctrlIcon.classList.remove("fa-pause");
+            ctrlIcon.classList.add("fa-play");
+       }
+        else{
+            song.play();
+            ctrlIcon.classList.add("fa-pause");
+            ctrlIcon.classList.remove("fa-play");
+        }
+    }
+
+    if(song.play()){
+        setInterval(()=>{
+            progress.value = song.currentTime;
+        },500);
+    }
+
+    progress.onchange = function(){
+        song.play();
+        song.currentTime = progress.value;
+        ctrlIcon.classList.add("fa-pause");
+        ctrlIcon.classList.remove("fa-play");
+        rwdIcon.classlist.add("fa-backward")
+    }
+    function restartAudio() {
+        ctrlIcon.classList.add("fa-backward");
+        song.currentTime = 0;
+        song.rewind();
+        
+    }
+
+    if(song.rewind()){
+        setInterval(()=>{
+            progress.value = song.currentTime = 0;
+        });
+    }
+
+    /* Rewind Java code from MDN tutorial: 
+    
+    function mediaBackward() {
+  clearInterval(intervalFwd);
+  fwd.classList.remove("active");
+
+  if (rwd.classList.contains("active")) {
+    rwd.classList.remove("active");
+    clearInterval(intervalRwd);
+    media.play();
+  } else {
+    rwd.classList.add("active");
+    media.pause();
+    intervalRwd = setInterval(windBackward, 200);
+  }
+}
+    
+    */ 
+    
+
+   </script>
+</body>
+</html>
