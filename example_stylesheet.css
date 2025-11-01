@@ -760,6 +760,11 @@ nav a{
      margin-left: 6em;
  }
 
+ .one-a-tq-tab {
+     display: inline-block;
+     margin-left: 7em;
+ }
+
  .double-tab {
      display: inline-block;
      margin-left: 8em;
