@@ -808,6 +808,12 @@ nav a{
   margin-left: 9.5em;
  }
 
+ .two-a-fty-tab {
+  display: inline-flex;
+  margin-left: 9.8em;
+ }
+
+
  .two-a-half-tab {
      display: inline-block;
      margin-left: 10em;
