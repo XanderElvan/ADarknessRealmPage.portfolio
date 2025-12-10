@@ -400,7 +400,7 @@
     width: 90%;
     margin: 0 auto; /* Center the DIV horizontally */
     height: 10vh;
-    
+    font-family: "Lexend", sans-serif;
  }
 
  .audio-desc-container {
@@ -496,6 +496,7 @@ nav a{
      width: 100vw;
      height: 30%;
      background-color: red;
+     font-family: "Lexend", sans-serif;
  }
 
  .audio-container {
