@@ -400,7 +400,7 @@
     width: 90%;
     margin: 0 auto; /* Center the DIV horizontally */
     height: 10vh;
-    font-family: "Lexend", sans-serif;
+    
  }
 
  .audio-desc-container {
@@ -415,8 +415,9 @@
  .file-navigation {
     width: 100vw;
     height: 20vh;
-    
+    font-family: "Lexend", sans-serif;
     text-align: center;
+    
  }
 
  .nav-button-sd {
