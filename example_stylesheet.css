@@ -69,6 +69,20 @@
    font-family: "Lexend", sans-serif;
  }
 
+ .example-planets-g {
+   flex: 2;
+   flex-wrap: wrap;
+   height: 35vh;
+   width: 30vw;
+   padding: 5%; 
+   margin-top: 1%;
+   margin-left: 3%;
+   border: 4px solid  white;
+   border-radius: 50%;
+   font-family: "Lexend", sans-serif;
+            
+  }
+
  .entance-audio {
     display: inline-flex;
     flex-direction: row;
