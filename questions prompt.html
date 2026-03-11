@@ -22,8 +22,9 @@
         }
 
         .page {
-            margin-left: 30%;
+            margin-left: 15%;
             height: fit-content;
+            width: 70%;
         }
         .underlined-title {
             font-size: 1.3em;
@@ -32,14 +33,42 @@
 
         .stanza {
             line-height: 1.5;
+            margin-right: 2.5%;
+            padding-left: 1.1em;
+            font-size: 1.2em;
+        }
+        .picture-frame {
+            border-radius: 5%;
+            justify-content: center;
+            height: 30vw;
+            width: 30vw;
+            image-orientation:from-image;
+        }
+        #egsetting {
+            height: 50vh;
+            width: 56vw;
+            border: 4px solid rgb(239, 204, 4);
+            margin-left: 4%;
+            margin-right: auto;   
+        }
+        .settinghideaway {
+            font-family: "Lexend", sans-serif;
+            font-size: 1.5em;
+            font-weight: 400;
+            display: none;
         }
         .file-navigation {
-            background-color: orange;
+            background-color: rgb(249, 174, 34);
             width: 80vw;
             margin-top: 5%;
-            margin-left: 10%;
             margin-bottom: 5%;
+            margin-left: 10%;
             height: fit-content;
+        }
+        .bold-title {
+            font-size: 1.5em;
+            text-align: center;
+            font-family: "Lexend", sans-serif;
         }
                a:link {
           color: black;
@@ -53,6 +82,18 @@
       a:active {
           color: whitesmoke;
       } 
+       .red {
+        color: red;
+        text-decoration: underline;
+      }
+       .red:hover {
+        text-decoration: underline;
+        color: orange;
+      }
+      .red:active {
+        text-decoration: underline;
+        color: yellow;
+      }
     </style>
 </head>
 <body>
@@ -69,7 +110,9 @@
             </div>
         </div>
         <br>
-       <div class="top-right-content" style="background-color: rgb(19, 138, 19);">
+        <!--Multiple soundscape code for possible Sounds of DR page
+        
+           <div class="top-right-content" style="background-color: rgb(19, 138, 19);">
         <p class="bold-title">A Green World Soundscape:</p>
         <div class="audio-container">
             <audio controls>
@@ -97,24 +140,17 @@
             </audio>
         </div>
     </div>
-    <!--Written questions-->
-    <div class="poem-container">
-        <div class="page">
-            <p class="underlined-title">
-                Twenty questions with your character:
-            </p>
-            <br> 
-            <p class="stanza">
-                Below you are twenty questions you can use to get to know one of your characters better. Above you, you will find three different soundscapes, each capturing the atmosphere from one of The Darkness Realm’s worlds. <br> <br>
+        
+        -->
+    
+    <!--Old version of Written questions
+    Below you are twenty questions you can use to get to know one of your characters better. Above you, you will find three different soundscapes, each capturing the atmosphere from one of The Darkness Realm’s worlds. <br> <br>
 
                 We invite you to experiment with any combination of the questions and sounds offered here, to see if this can ignite new ideas, or reveal more depth to one of your pre-existing characters. <br> <br>
 
                 There is no, ‘right way’ to go about this, if one of the soundscapes speaks to you, you might find yourself having a conversation with a new character that lives there. You might disregard the soundscapes altogether, instead taking this opportunity to sit down with one of your characters and get to know them a little better.  <br>
-            </p>
-            <p class="stanza">
-                <span class="bold">
-                    
-                    What’s your name? <br> <br> <br>
+
+      What’s your name? <br> <br> <br>
 
 
                     How old are you? <br> <br> <br>
@@ -180,13 +216,74 @@ What’s your dream job? <br> <br> <br>
 
 And last, but not least, what have you got in your pocket? <br> 
                 </span>
+    
+    -->
+    <div class="poem-container">
+        <div class="page">
+            <p class="underlined-title">
+                Prompt: Get to know your setting:
             </p>
+            <br> 
+            <p class="stanza">
+                Setting can often be a character in itself. Some are cruel, unforgiving places to escape or overcome. Others are like old friends, welcoming you back.
+                
+                <br><br> 
+                
+                Below there are two lists of questions, split across two perspectives. The first set are written for you, the writer, to consider. The second are adressed directly to your setting, regurding it as a chararacter in its own right. <br><br>
+                
+                You can switch between the two sets of questions by clicking on the button at the bottom of the list. If a question doesn't seem relevant to your setting, feel free to skip it, or adapt it. <br>
+                If you would like an example setting to work with, <a href="javascrpt:;" onClick="document.getElementById('settinghideaway').style.display='block';" class="red">please click here</a>. 
+            </p>
+
+            <div id="settinghideaway" style="display: none;">
+                <p class="stanza">
+                    Below is an image of the pondside featured in Stages of Softer Contentment: A Journey. <br>
+                    Consider this pondside, then try to answer the questions below instinctivly and see what is revealed to you: <br>
+                </p>
+                <img src="./images/Stages2small.jpg" id="egsetting">
+                <p class="stanza">
+                    To hide this again, <a href="javascript:;" onClick="document.getElementById('settinghideaway').style.display='none';" class="red">please click here</a>
+                </p>
+            </div>
+
+            <!--
+             This exercise is designed to get you thinking about the practicalities of your setting, and its personality. 
+             
+            By answering both, you should uncover something about both the atmosphere and the practicalities of your setting. -->
+            
+
+            <p class="stanza bold"><b id='name'>
+                How would you describe the atmosphere, using ten words or less? <br><br> 
+
+                Is this place unique? Or one of many such places in the world? <br> <br> 
+
+                What are the key landmarks or points of interest here? <br> <br> 
+
+                If a visitor asked a local for recommendations, what would they say? <br> <br> 
+
+                On an average day, what can be smelt in the air, and what sounds <br> can be heard? <br> <br> 
+
+                What changes here on the busiest or most important day(s) of the year, <br> compared to a normal day? <br> <br> 
+
+                Is the area working in harmony with nature, or has it been imposed upon the landscape? <br> <br>
+
+                What social hierarchy, and/or hfood chains are in place here? <br><br>
+
+                What stories are told about this place, and are any of them true? <br><br>
+
+                Has this place ever been the scene of a crime? <br><br>
+
+            </b></p>
+            <input type='button' onclick='changeText()' value="click to change perspective" id="btn" />
+            <br /><br />
             
         </div>
 
         
     
     <!--Navigation links / buttons-->
+    
+    </div>
     <div class="file-navigation">
         <!--Individual button code to work on:
         <div class="nav-button-sd">
@@ -199,14 +296,33 @@ And last, but not least, what have you got in your pocket? <br>
             <p>To read 11:11 Butterfles All The Way, <a href="./11:11.html">please click here</a></p>
         </div>
         -->
-        
+        <p class="bold-title">To return to The Orange World, <a href="./Orange World.html">please click here.</a></p> 
 
         <p class="bold-title">To return to the Homepage, <a href="./index.html">please click here.</a></p> 
 
-        <p class="bold-title">To return to The Orange World, <a href="./Orange World.html">please click here.</a></p> 
+        
         
     
     </div>
-    </div>
+    <script>
+        let time = 0;
+        const paragraphs = ["First", "Second", "First", "Second", "First"];
+
+function changeText() {
+  let text = `${paragraphs[time]} Paragraph`;
+  if (text === "First Paragraph") {
+    document.getElementById('name').innerHTML = "How would you describe yourself, in ten words or less? <br><br> What is your relationship with Mother Nature? <br><br>Are you unique? Or one of many, similar places? <br><br> What are your earliest memories of Life? <br><br> What secrets are buried beneeth your grounds or waters? <br><br> What would you say to a new arrival, if they could hear you speak? <br><br> What are you afraid of? <br><br> Are you working in harmony with those who call you home, <br> or working against them? <br><br> Are you proud of what Life is able to accomplish because of you? ";
+    document.getElementById('btn').value = "click to change perspective"
+  } 
+  if (text === "Second Paragraph") {
+    document.getElementById('name').innerHTML = "How would you describe the atmosphere, using ten words or less? <br><br>  Is this place unique? Or one of many such places in the world? <br> <br> What are the key landmarks or points of interest here? <br> <br> If a visitor asked a local for recommendations, what would they say? <br> <br> On an average day, what can be smelt in the air, and what sounds can be heard? <br> <br> What changes here on the busiest or most important day(s) of the year, <br> compared to a normal day? <br> <br> Is the area working in harmony with nature, or has it been imposed <br> upon the landscape? <br> <br> What social hierarchy, and/or food chains are in-place here? <br><br> What stories are told about this place, and are any of them true? <br><br> Has this place ever been the scene of a crime? <br><br>";
+    document.getElementById('btn').value = "click to change perspective"
+  } 
+  if (paragraphs[time + 1]) {
+    time++;
+  }
+}
+
+    </script>
 </body>
 </html>

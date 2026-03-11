@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The ABC of Songwriting</title>
+    <link rel="stylesheet" href="example_stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .poem-container {
+            background-image: url(./images/Home\ background.jpg);
+            width: 100vw;
+            height: fit-content;
+        }
+            .fixed-header {
+        position: absolute;
+        background-color:rgb(249, 174, 34) ;
+     }
+        .page {
+            width: 80vw;
+            height: fit-content;
+            margin-left: 5%;
+        }
+        .top-right-content {
+            background-color: orange;
+            position: relative;
+            width: 90%;
+            height: 10%;
+            border-radius: 2%;
+            font-family: "Lexend", sans-serif;
+            text-align: center;
+            margin-left: 6%;
+            padding-top: 1.2%;
+            padding-bottom: 0.3%;
+        }
+        .audio-container {
+            background-color: orange;
+            font-family: "Lexend", sans-serif;
+            position: relative;
+
+           
+        }
+        .bold-title {
+            font-size: 1.5em;
+            text-align: center;
+            font-family: "Lexend", sans-serif;
+        }
+        .bold-title-2 {
+            font-size: 1.3em;
+            margin-left: 20%;
+            margin-top: 1em;
+            font-family: "Lexend", sans-serif;
+        }
+        .subheading {
+            text-decoration: none;
+            font-family: "Lexend", sans-serif;
+            text-align: left;
+            line-height: 1.5;
+            padding-left: 1.5em;
+           
+        }
+        .stanza {
+            margin-left: 30%;
+            font-size: 1.3em;
+        }
+
+         .examplehideaway {
+            font-family: "Lexend", sans-serif;
+            font-size: 1.5em;
+            font-weight: 400;
+            display: none;
+        }
+
+        .hideaway {
+            font-family: "Lexend", sans-serif;
+            font-size: 1.5em;
+            font-weight: 400;
+            display: none;
+        }
+
+        .rhymehideaway {
+            font-family: "Lexend", sans-serif;
+            font-size: 1.5em;
+            font-weight: 400;
+            display: none;
+        }
+
+         .soulhideaway {
+            font-family: "Lexend", sans-serif;
+            font-size: 1.5em;
+            font-weight: 400;
+            display: none;
+        }
+
+        .anchorhideaway {
+            font-family: "Lexend", sans-serif;
+            font-size: 1.5em;
+            font-weight: 400;
+            display: none;
+        }
+
+
+
+         .music-player {
+        position: relative;
+        background-image: url(./images/testAnaBGSmall.jpg);
+        margin-left: 25%;
+        height: fit-content;
+      }
+
+      .song-title{
+        color: black;
+        font-family: "Lexend", sans-serif;
+        font-size: 1.8em;
+      }
+      .song-title {
+        font-family: "Lexend", sans-serif;
+      }
+
+
+      .song-img {
+        width: 220px;
+        height: 220px;
+      }
+
+      #progress {
+        background-color: rgb(249, 174, 34);
+      }
+
+      #progress::-webkit-slider-thumb {
+        color: rgb(105, 72, 40);
+        background-color:rgb(167, 114, 62);
+      }
+
+      .controls div:nth-child(2){
+        background-color:rgb(167, 114, 62);
+      }
+
+      .file-navigation {
+            background-color: rgb(249, 174, 34);
+            width: 80vw;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            margin-left: 11.5%;
+            height: fit-content;
+        }
+           a:link {
+          color: black;
+      }
+      a:visited {
+          color: black;
+      }
+      a:hover {
+          color: antiquewhite;
+      }
+      a:active {
+          color: whitesmoke;
+      }
+      .red {
+        color: red;
+        text-decoration: underline;
+      }
+      .red:hover {
+        text-decoration: underline;
+        color: orange;
+      }
+      .red:active {
+        text-decoration: underline;
+        color: yellow;
+      }
+    </style>
+</head>
+
+<body>
+    <div class="poem-container">
+        <!--Navigation Bar:-->
+        <div class="fixed-header">
+            <div class="navigation-container">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="Orange World.html">Orange World</a>
+                    <a href="Green World.html">Green World</a>
+                    <a href="Red World.html">Red World</a>
+                    <a href="Still to Come.html">Still to Come</a>
+                    <a href="Contact.html">Contact and More</a>
+                </nav>
+            </div>
+        </div>
+        <br> 
+        <div class="page">
+            <p class="bold-title">Songwriting 1: Writing To Music</p>
+            <p class="prompt-desc">
+                This two-part prompt covers some of the basics of songwriting, and writing to music, using the example instrumental provided below. This prompt assumes no prior knowledge. If you already have some songwriting experience, please feel free to follow your own process while listening to the instrumental. <br><br>
+
+                For Part One, Finding Initial Ideas In Music, <a href="javascrpt:;" onClick="document.getElementById('soulhideaway').style.display='block';" class="red">please click here</a>
+                <br>
+            </p>
+            <div id="soulhideaway" style="display: none;">
+                    <p class="bold-title">Finding Initial Ideas In Music</p>
+                    <p class="prompt-desc">
+                        One of the best ways to find initial lyrics is to follow your instincts, either visually or melodically. <br>
+                        If working visually, click play on the Example Instrumental, and as you listen note down your initial responses in a new document. For example, do you see any pieces of scenery, or shades of colour in your head? Does the music trigger any memories for you? Do you feel drawn to a particular time of day, or season? <br><br>
+
+                        Alternatively, you can respond to the melody by humming along. As you do so, see if any words or phrases start to take shape. A series of hum’s can often reveal the end of lines, phrases you can then work back from. If this approach works for you, you may want to start a voice recording, or pause the track to note down anything particularly strong. <br><br> 
+
+                        Once you have found a few phrases, you’re ready to move onto part 2. <br><br>
+                        If you would like example phrases to take into part two, you can use or adapt any of the following: <br>
+
+                        'He / She loves me.' 'What would the wind say?' 'It’s time I change.'
+                        'Was this another mistake? <br><br> 
+ 
+
+                        
+                        To hide this again, <a href="javascript:;" onClick="document.getElementById('soulhideaway').style.display='none';" class="red">please click here</a>
+                        
+                    </p>
+                   
+                </div>
+                  
+                    <!--Anchor Phrases section for later prompt:
+                        
+                        <p class="prompt-desc">
+                         For Part Two, Initial Shaping With Anchor Phrases, <a href="javascript:;" onClick="document.getElementById('anchorhideaway').style.display='block';" class="red">please click here</a>. 
+                    </p>
+                    <div id="anchorhideaway" style="display: none;">
+                        <p class="prompt-desc">
+                            Look back over your initial responses, and see what words or phrases feel strongest- the most central to what you felt while listening, or the ones you keep repeating to yourself. <br>
+
+                            Select 1-3 phrases to be your anchor phrases. We’ll use these to give your song some shape. <br><br> 
+
+                            It could be something as nonsensical as ‘do-da-do,’ or a searching rhetorical question, what’s’ important is, they give you a sense of direction, a theme or hook to build around. You can use the rewind button to play the instrumental again, if that’s helpful. 
+                            <br><br>
+
+                            For some example phrases to work with, <a href="javascript:;" onClick="document.getElementById('examplehideaway').style.display='block';" class="red">please click here</a>
+
+                            To hide this information again, <a href="javascript:;" onClick="document.getElementById('anchorhideaway').style.display='none';" class="red">please click here</a>
+
+                        </p>
+                        
+                    </div>  
+                        -->
+                    <p class="prompt-desc">
+                         For Part Two, Turning Ideas Into Lyrics, <a href="javascript:;" onClick="document.getElementById('rhymehideaway').style.display='block';" class="red">please click here</a> 
+                    </p>
+                <div id="rhymehideaway" style="display: none;">
+                    <p class="bold-title">Turning Ideas Into Lyrics</p>
+                    <p class="prompt-desc">
+                        Song lyrics do not have to rhyme, but for this exercise we’re going to build lyrics around your chosen phrases using a combination of perfect rhyme and half rhyme, two of the most common rhyme types in songwriting. 
+                    </p>
+                    <p class="prompt-desc">
+                        Perfect Rhyme refers to words with identical sounds after the opening vowel. For example: 
+                    </p>
+                    <p class="stanza">
+                        Is it ringing any <span class="bold">bells?</span> Like you’ve been here before?<br>
+                        I couldn’t even <span class="bold">tell,</span> I’ve never felt so sure.
+                    </p>
+                    <p class="prompt-desc">
+                        Half Rhyme is more subtle, requiring only the final consonant sounds to rhyme. For example: 
+                    </p>
+                    <p class="stanza">
+                        Is it ringing any bells? Like you’ve been here <span class="bold">before?</span><br>
+                        I couldn’t even tell, I’ve never felt so <span class="bold">sure.</span>
+                    </p>
+
+                    <p class="prompt-desc">
+                        <br> By using both, you combine the clarity of perfect rhymes with softer ones, which prevent your lyrics becoming forced or cliché. <br>
+
+                        As a starting point, take one of your phrases and write 2-4 lines following the above template: combining the two rhyme types in an AB, AB rhyme scheme. <br> If that feels too restrictive, break away from it- try incorporating one perfect rhyme to start or end a series of half rhymes, or use a more complex rhyme scheme. <br><br>
+                        Once you have a few lyrics, try humming or singing them along to the instrumental. If they feel a little out of place in the music, that's ok for now. We’ll cover syllable counting, as well  more advanced structures and techniques in future prompts, as you work towards a finished song. The aim for now is to get more comfortable writing lyrics to music. <br><br>
+
+
+                        
+                        To hide this information again, <a href="javascript:;" onClick="document.getElementById('rhymehideaway').style.display='none';" class="red">please click here</a>
+                    </p>
+
+            
+                
+            </div>
+
+            <div class="music-player">
+            
+          
+                <img src="./images/Autumn Pavements frame.jpg" alt="artwork of autumnal leaves" class="song-img">
+                <p class="song-title">Example Instrumental</p>
+                <p class="subheading" style="text-decoration: underline; text-align: center;">Key: F <br> Time Signiture: 4/4</p>
+                <p style="color:black;"><span class="fa-solid fa-copyright">Woven   Realms Ltd. 2025</span></p>
+                <audio id="song">
+                    <source src="./Sounds of the DR/shorter she loves me in another .mp3" type="audio/mpeg">
+                </audio>
+                <input type="range" value="0" id="progress">
+
+                <div class="controls">
+                    <div onclick="restartAudio()">
+                        <i class="fa-solid fa-backward" id="rwdIcon"></i>
+                    </div>
+                    <div onclick="playPause()">
+                        <i class="fa-solid fa-play" id="ctrlIcon"></i>
+                    </div>
+                
+                </div>
+        </div>
+
+                
+    </div>
+    
+        
+</div>
+
+<div class="file-navigation">
+       
+         <p class="bold-title">To return to The Orange World, <a href="./Orange World.html">please click here.</a></p>
+
+        <p class="bold-title">To return to the Homepage, <a href="./index.html">please click here.</a></p> 
+  
+    </div>
+    
+    <!-- 
+rhyme schemes, song structures and narrative styles in future prompts, as well as techniques like syllable counting and call and response
+  This page is the first of several covering songwriting fundermentals. Below you'll find some structural analysis of one of our own songs, and an instrumental for you to start writing some lyrics of your own.  <br><br> 
+                
+               If you'd like to skip straight to writing, scroll down to the file named, 'AB Instrumental.'
+               
+<br><br> 
+ We'll start by taking you through one of the most common song structures, and how it is noted down. <br> 
+               While there is no' right' way to structure a song, the following is the most common notation songwriters use for detailing a song’s structure:
+
+"As a rule, some writers use the following code for each section: A-verse B-chorus.” When a pre-chorus is used… to link the verse and chorus, the verse remains A, the pre-chorus is B, and the chorus C.”
+
+Let's look at our song, autumn pavements, so you can see some of this being used in practice. <br>
+
+Is it ringing any bells? Like you’ve been here before?
+I couldn’t even tell, I’ve never felt so sure.
+
+ Through the passage of percepti<span class="bold">on</span><br> 
+                in spiralling courses, r<span class="bold">un</span>
+
+    To see an example of this from our own work, <a href="javascript:;" onClick="document.getElementById('hideaway').style.display='block';" class="red">please click here</a><br><br>
+
+
+
+
+
+            </p>
+        <div id="hideaway" style="display:none;">
+               <br>
+            <div class="top-right-content">
+                <p class="bold-title-2">Autumn Pavements</p>
+                 <div class="audio-container">
+                
+                <audio controls>
+                    <source src="./songs/Autumn Pavements 1 Ld.mp3">
+                </audio>
+            </div>
+            </div>
+
+            <p class="stanza">
+                Here we are, your hand in mine; <br>
+                just like the leaves, I’m falling.
+
+
+            </p>
+            <p class="stanza">
+                Do you see my eyes? <br>
+                The way they're open wide; never felt like this before.
+
+
+
+            </p>
+            <p class="stanza">
+                Here we are, my front door - <br>
+                have I ever been here before?
+
+
+            </p>
+           <p class="subheading">
+            Our song Autumn Pavements follows an AB structure, with verses followed by a chorus. <br>
+            What's interesting, is the length of the chorus, and the instrumental B section, increases each time, as the narrative of the song progresses.<br> <br>
+            
+            To hide this information again, <a href="javascript:;" onClick="document.getElementById('hideaway').style.display='none';">please click here</a>
+           </p>
+
+-->
+
+     <script>
+
+    let progress = document.getElementById("progress");
+    let song = document.getElementById("song");
+    let ctrlIcon = document.getElementById("ctrlIcon");
+
+    song.onloadedmetadata = function(){
+        progress.max = song.duration;
+        progress.value = song.currentTime;
+
+    }
+
+    function playPause(){
+       if(ctrlIcon.classList.contains("fa-pause")) {
+            song.pause();
+            ctrlIcon.classList.remove("fa-pause");
+            ctrlIcon.classList.add("fa-play");
+       }
+        else{
+            song.play();
+            ctrlIcon.classList.add("fa-pause");
+            ctrlIcon.classList.remove("fa-play");
+        }
+    }
+
+    if(song.play()){
+        setInterval(()=>{
+            progress.value = song.currentTime;
+        },800);
+    }
+
+   progress.onchange = function(){
+        song.play();
+        song.currentTime = progress.value;
+        ctrlIcon.classList.add("fa-pause");
+        ctrlIcon.classList.remove("fa-play");
+        rwdIcon.classlist.add("fa-backward")
+    }
+    function restartAudio() {
+        ctrlIcon.classList.add("fa-backward");
+        song.currentTime = 0;
+        song.rewind();
+        
+    }
+
+    if(song.rewind()){
+        setInterval(()=>{
+            progress.value = song.currentTime = 0;
+        });
+    }
+   </script>
+</body>
+</html>
