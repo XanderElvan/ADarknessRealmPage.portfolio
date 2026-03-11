@@ -70,6 +70,10 @@
             text-align: center;
             font-family: "Lexend", sans-serif;
         }
+        .journey-tab {
+            display: inline-block;
+            margin-left: 32em;
+ }
                a:link {
           color: black;
       }
@@ -95,7 +99,6 @@
         color: yellow;
       }
     </style>
-</head>
 <body>
      <div class="fixed-header">
             <div class="navigation-container">
@@ -229,16 +232,16 @@ And last, but not least, what have you got in your pocket? <br>
                 
                 <br><br> 
                 
-                Below there are two lists of questions, split across two perspectives. The first set are written for you, the writer, to consider. The second are adressed directly to your setting, regurding it as a chararacter in its own right. <br><br>
+                Below there are two lists of questions, split across two perspectives. The first set are written for you, the writer, to consider. The second are adressed directly to your setting, regarding it as a character in its own right. <br><br>
                 
-                You can switch between the two sets of questions by clicking on the button at the bottom of the list. If a question doesn't seem relevant to your setting, feel free to skip it, or adapt it. <br>
-                If you would like an example setting to work with, <a href="javascrpt:;" onClick="document.getElementById('settinghideaway').style.display='block';" class="red">please click here</a>. 
+                You can switch between the two sets of questions by clicking  the 'Change Perspective' button at the bottom of the list. If a question doesn't seem relevant to your setting, feel free to skip it, or adapt it. <br>
+                If you would like an example setting to work with, <a href="javascrpt:;" onClick="document.getElementById('settinghideaway').style.display='block';" class="red">please click here</a> 
             </p>
 
             <div id="settinghideaway" style="display: none;">
                 <p class="stanza">
-                    Below is an image of the pondside featured in Stages of Softer Contentment: A Journey. <br>
-                    Consider this pondside, then try to answer the questions below instinctivly and see what is revealed to you: <br>
+                    Below is an image of the pondside featured in Stages of Softer Contentment: <br> <span class="journey-tab"></span> A Journey <br>
+                    Consider this pondside, then try to instinctively answer the questions below and see what you receive: <br>
                 </p>
                 <img src="./images/Stages2small.jpg" id="egsetting">
                 <p class="stanza">
@@ -249,32 +252,34 @@ And last, but not least, what have you got in your pocket? <br>
             <!--
              This exercise is designed to get you thinking about the practicalities of your setting, and its personality. 
              
-            By answering both, you should uncover something about both the atmosphere and the practicalities of your setting. -->
+            By answering both, you should uncover something about both the atmosphere and the practicalities of your setting. 
+            
+            What social hierarchy, and/or hfood chains are in place here? <br><br>
+            -->
             
 
             <p class="stanza bold"><b id='name'>
                 How would you describe the atmosphere, using ten words or less? <br><br> 
 
-                Is this place unique? Or one of many such places in the world? <br> <br> 
+                Is this place unique? Or one of many such places? <br> <br> 
 
-                What are the key landmarks or points of interest here? <br> <br> 
+                What can be smelt in the air; what sounds can be heard on the wind? <br> <br> 
 
-                If a visitor asked a local for recommendations, what would they say? <br> <br> 
+                Is today a day like any other? <br><br>
 
-                On an average day, what can be smelt in the air, and what sounds <br> can be heard? <br> <br> 
-
-                What changes here on the busiest or most important day(s) of the year, <br> compared to a normal day? <br> <br> 
-
-                Is the area working in harmony with nature, or has it been imposed upon the landscape? <br> <br>
-
-                What social hierarchy, and/or hfood chains are in place here? <br><br>
+                Is this place natural, or has it been imposed upon the landscape? <br> <br>
 
                 What stories are told about this place, and are any of them true? <br><br>
 
-                Has this place ever been the scene of a crime? <br><br>
+                Has this place ever experienced a tragedy? 
+             <br><br>
+                <!-- cut question:
+                 What changes here on the busiest or most important day(s) of the year, <br> compared to a normal day? <br> <br> 
 
+                 What are the key landmarks or points of interest here? <br> <br> If a visitor asked a local for recommendations, what would they say? <br> <br>
+                -->
             </b></p>
-            <input type='button' onclick='changeText()' value="click to change perspective" id="btn" />
+            <input type='button' onclick='changeText()' value="CHANGE PERSPECTIVE" id="btn" style="font-weight: bold;" />
             <br /><br />
             
         </div>
@@ -311,11 +316,11 @@ And last, but not least, what have you got in your pocket? <br>
 function changeText() {
   let text = `${paragraphs[time]} Paragraph`;
   if (text === "First Paragraph") {
-    document.getElementById('name').innerHTML = "How would you describe yourself, in ten words or less? <br><br> What is your relationship with Mother Nature? <br><br>Are you unique? Or one of many, similar places? <br><br> What are your earliest memories of Life? <br><br> What secrets are buried beneeth your grounds or waters? <br><br> What would you say to a new arrival, if they could hear you speak? <br><br> What are you afraid of? <br><br> Are you working in harmony with those who call you home, <br> or working against them? <br><br> Are you proud of what Life is able to accomplish because of you? ";
+    document.getElementById('name').innerHTML = "What is your relationship with nature? <br><br>Do you consider yourself to be one of a kind?<br><br> What are your earliest memories of life? <br><br> What do you hold precious? <br><br> How would you welcome a new arrival? <br><br> Are you working in harmony with those who call you home? <br><br> Do you know how far-reaching your impact truly is? ";
     document.getElementById('btn').value = "click to change perspective"
   } 
   if (text === "Second Paragraph") {
-    document.getElementById('name').innerHTML = "How would you describe the atmosphere, using ten words or less? <br><br>  Is this place unique? Or one of many such places in the world? <br> <br> What are the key landmarks or points of interest here? <br> <br> If a visitor asked a local for recommendations, what would they say? <br> <br> On an average day, what can be smelt in the air, and what sounds can be heard? <br> <br> What changes here on the busiest or most important day(s) of the year, <br> compared to a normal day? <br> <br> Is the area working in harmony with nature, or has it been imposed <br> upon the landscape? <br> <br> What social hierarchy, and/or food chains are in-place here? <br><br> What stories are told about this place, and are any of them true? <br><br> Has this place ever been the scene of a crime? <br><br>";
+    document.getElementById('name').innerHTML = "How would you describe the atmosphere, using ten words or less? <br><br>  Is this place unique? Or one of many such places? <br> <br>  What can be smelt in the air; what sounds can be heard on the wind? <br> <br> Is today a day like any other? <br><br> Is this place natural, or has it been imposed <br> upon the landscape? <br> <br> What social hierarchy, and/or food chains are in-place here? <br><br> What stories are told about this place, and are any of them true? <br><br> Has this place ever experienced a tragedy? <br><br>";
     document.getElementById('btn').value = "click to change perspective"
   } 
   if (paragraphs[time + 1]) {
