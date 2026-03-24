@@ -429,7 +429,7 @@
  .file-navigation {
     width: 100vw;
     height: 20vh;
-    
+    font-family: "Lexend", sans-serif;
     text-align: center;
     
  }
@@ -511,7 +511,7 @@ nav a{
      width: 100vw;
      height: 30%;
      background-color: red;
-     
+     font-family: "Lexend", sans-serif;
  }
 
  .audio-container {
