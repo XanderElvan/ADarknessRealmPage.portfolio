@@ -72,8 +72,19 @@
         }
         .journey-tab {
             display: inline-block;
-            margin-left: 32em;
- }
+            margin-left: 30em;
+        }
+       
+        #btn {
+            font-size: 1.4em;
+            font-weight: bold;
+            font-family: "Lexend", sans-serif;
+            height: 2.5em;
+            width: 80%;
+            margin-left: 10%;
+            cursor: pointer;
+            background-color: rgb(249, 174, 34);
+        }
                a:link {
           color: black;
       }
@@ -98,6 +109,17 @@
         text-decoration: underline;
         color: yellow;
       }
+      @media screen and (min-width: 1001px) and (max-width:1250px) {
+
+
+
+           .page {
+            width: 80%;
+            margin-left: 10%;
+           }
+            
+
+        }
     </style>
 <body>
      <div class="fixed-header">
@@ -240,7 +262,11 @@ And last, but not least, what have you got in your pocket? <br>
 
             <div id="settinghideaway" style="display: none;">
                 <p class="stanza">
-                    Below is an image of the pondside featured in Stages of Softer Contentment: <br> <span class="journey-tab"></span> A Journey <br>
+                    Below is an image of the pondside featured in
+                    <a href="./Stages of Softer Contentment A Journey.html" class="red">Stages of Softer Contentment: <br> <span class="journey-tab"></span> A Journey
+                        
+                    </a>
+                     <br>
                     Consider this pondside, then try to instinctively answer the questions below and see what you receive: <br>
                 </p>
                 <img src="./images/Stages2small.jpg" id="egsetting">
@@ -279,7 +305,7 @@ And last, but not least, what have you got in your pocket? <br>
                  What are the key landmarks or points of interest here? <br> <br> If a visitor asked a local for recommendations, what would they say? <br> <br>
                 -->
             </b></p>
-            <input type='button' onclick='changeText()' value="CHANGE PERSPECTIVE" id="btn" style="font-weight: bold;" />
+            <input type='button' onclick='changeText()' value="Change Perspective" id="btn" style="font-weight: bold;" />
             <br /><br />
             
         </div>
@@ -317,11 +343,11 @@ function changeText() {
   let text = `${paragraphs[time]} Paragraph`;
   if (text === "First Paragraph") {
     document.getElementById('name').innerHTML = "What is your relationship with nature? <br><br>Do you consider yourself to be one of a kind?<br><br> What are your earliest memories of life? <br><br> What do you hold precious? <br><br> How would you welcome a new arrival? <br><br> Are you working in harmony with those who call you home? <br><br> Do you know how far-reaching your impact truly is? ";
-    document.getElementById('btn').value = "click to change perspective"
+    document.getElementById('btn').value = "Change Perspective"
   } 
   if (text === "Second Paragraph") {
     document.getElementById('name').innerHTML = "How would you describe the atmosphere, using ten words or less? <br><br>  Is this place unique? Or one of many such places? <br> <br>  What can be smelt in the air; what sounds can be heard on the wind? <br> <br> Is today a day like any other? <br><br> Is this place natural, or has it been imposed <br> upon the landscape? <br> <br> What social hierarchy, and/or food chains are in-place here? <br><br> What stories are told about this place, and are any of them true? <br><br> Has this place ever experienced a tragedy? <br><br>";
-    document.getElementById('btn').value = "click to change perspective"
+    document.getElementById('btn').value = "Change Perspective"
   } 
   if (paragraphs[time + 1]) {
     time++;
