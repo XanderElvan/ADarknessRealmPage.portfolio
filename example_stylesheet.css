@@ -518,7 +518,7 @@ nav a{
      display: flex;
      justify-content: flex-end;
      align-self: flex-end;
-     width: 100%;
+     width: 100vw;
      height: fit-content;
      position: fixed;
      flex: 1;
