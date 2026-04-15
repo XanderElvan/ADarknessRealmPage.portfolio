@@ -37,6 +37,11 @@
             padding-left: 1.1em;
             font-size: 1.2em;
         }
+        .sub {
+            font-size: 1.15em;
+            text-decoration: underline;
+            font-weight: bold;
+        }
         .picture-frame {
             border-radius: 5%;
             justify-content: center;
@@ -135,114 +140,7 @@
             </div>
         </div>
         <br>
-        <!--Multiple soundscape code for possible Sounds of DR page
         
-           <div class="top-right-content" style="background-color: rgb(19, 138, 19);">
-        <p class="bold-title">A Green World Soundscape:</p>
-        <div class="audio-container">
-            <audio controls>
-                <source src="./soundscapes/Free The Love demo.mp3" type="audio/mp3"> 
-               
-                If you are seeing this text, your browser does not currently support our audio players. The cookies required for audio to play may currently be disabled. You can review your Cookies settings here: failing that, please feel free to contact us for assistance.
-            </audio>
-        </div>
-    </div>
-    <div class="top-right-content" style="background-color: red;">
-        <p class="bold-title">A Red World soundscape:</p>
-        <div class="audio-container">
-            <audio controls>
-                <source src="./soundscapes/Mereology soundscape only.mp3" type="audio/mp3"> 
-                If you are seeing this text, your browser does not currently support our audio players. See above for more information.
-            </audio>
-        </div>
-    </div>
-    <div class="top-right-content" style="background-color: orange;">
-        <p class="bold-title">An Orange World Soundscape:</p>
-        <div class="audio-container">
-            <audio controls>
-                <source src="./soundscapes/Auntumn Pavements soundscape.mp3" type="audio/mp3"> 
-                If you are seeing this text, your browser does not currently support our audio players. See above for more information.
-            </audio>
-        </div>
-    </div>
-        
-        -->
-    
-    <!--Old version of Written questions
-    Below you are twenty questions you can use to get to know one of your characters better. Above you, you will find three different soundscapes, each capturing the atmosphere from one of The Darkness Realm’s worlds. <br> <br>
-
-                We invite you to experiment with any combination of the questions and sounds offered here, to see if this can ignite new ideas, or reveal more depth to one of your pre-existing characters. <br> <br>
-
-                There is no, ‘right way’ to go about this, if one of the soundscapes speaks to you, you might find yourself having a conversation with a new character that lives there. You might disregard the soundscapes altogether, instead taking this opportunity to sit down with one of your characters and get to know them a little better.  <br>
-
-      What’s your name? <br> <br> <br>
-
-
-                    How old are you? <br> <br> <br>
-
-
-What’s you gender? <br> <br> <br>
-
-
-Where were you born and raised? <br> <br> <br> 
-
-
-Where do you live now? <br> <br> <br>
-
- 
-What can you see out of your window? <br> <br> <br>
-
-
-What are you really good at? <br> <br> <br>
-
-
-What’s your biggest weakness? <br> <br> <br> 
-
-
-What are you afraid of? <br> <br> <br>
-
-
-What’s your proudest accomplishment? <br> <br> <br> 
-
-
-What’s your worst habit? <br> <br> <br>
-
-
-What’s your guilty pleasure? <br> <br> <br> 
-
-
-What’s your most prized possession? <br> <br> <br>
-
-
-What makes you happy? <br> <br> <br>
-
-
-What makes you angry? <br> <br> <br>
-
-
-What can you do that would surprise your friends? <br> <br> <br>
-
-
-What do you <span class="italic">really</span> want? <br> <br> <br>
-
-
-Why are you here, now? <br> <span class="plain">(either answer generally: What’s led you to this point in your life? <br> Or, more specifically: Why are you doing this interview?)</span> 
-<br> <br> <br>
-
-
-
-What have you never told anyone before? <br> <br> <br>
-
-
-
-What’s your dream job? <br> <br> <br>
-
-
-
-And last, but not least, what have you got in your pocket? <br> 
-                </span>
-    
-    -->
     <div class="poem-container">
         <div class="page">
             <p class="underlined-title">
@@ -285,6 +183,7 @@ And last, but not least, what have you got in your pocket? <br>
             
 
             <p class="stanza bold"><b id='name'>
+                <span class="sub">Questions for you, the writer to consider:</span><br><br>
                 How would you describe the atmosphere, using ten words or less? <br><br> 
 
                 Is this place unique? Or one of many such places? <br> <br> 
@@ -342,11 +241,11 @@ And last, but not least, what have you got in your pocket? <br>
 function changeText() {
   let text = `${paragraphs[time]} Paragraph`;
   if (text === "First Paragraph") {
-    document.getElementById('name').innerHTML = "What is your relationship with nature? <br><br>Do you consider yourself to be one of a kind?<br><br> What are your earliest memories of life? <br><br> What do you hold precious? <br><br> How would you welcome a new arrival? <br><br> Are you working in harmony with those who call you home? <br><br> Do you know how far-reaching your impact truly is? ";
+    document.getElementById('name').innerHTML = "<span class='sub'>Questions adressed directly to your setting:</span><br><br>What is your relationship with nature? <br><br>Do you consider yourself to be one of a kind?<br><br> What are your earliest memories of life? <br><br> What do you hold precious? <br><br> How would you welcome a new arrival? <br><br> Are you working in harmony with those who call you home? <br><br> Do you know how far-reaching your impact truly is? ";
     document.getElementById('btn').value = "Change Perspective"
   } 
   if (text === "Second Paragraph") {
-    document.getElementById('name').innerHTML = "How would you describe the atmosphere, using ten words or less? <br><br>  Is this place unique? Or one of many such places? <br> <br>  What can be smelt in the air; what sounds can be heard on the wind? <br> <br> Is today a day like any other? <br><br> Is this place natural, or has it been imposed upon the landscape? <br> <br> What social hierarchy, and/or food chains are in-place here? <br><br> What stories are told about this place, and are any of them true? <br><br> Has this place ever experienced a tragedy? <br><br>";
+    document.getElementById('name').innerHTML = "<span class='sub'>Questions for you, the writer to consider:</span><br><br>How would you describe the atmosphere, using ten words or less? <br><br>  Is this place unique? Or one of many such places? <br> <br>  What can be smelt in the air; what sounds can be heard on the wind? <br> <br> Is today a day like any other? <br><br> Is this place natural, or has it been imposed upon the landscape? <br> <br> What social hierarchy, and/or food chains are in-place here? <br><br> What stories are told about this place, and are any of them true? <br><br> Has this place ever experienced a tragedy? <br><br>";
     document.getElementById('btn').value = "Change Perspective"
   } 
   if (paragraphs[time + 1]) {
