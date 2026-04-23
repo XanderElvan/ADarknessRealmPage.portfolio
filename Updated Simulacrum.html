@@ -34,6 +34,29 @@
             text-align: center;
             padding-left: 0%;
         }
+         .button {
+            background-color: rgb(149, 183, 99);
+            color: black;
+            font-size: 1em;
+            font-family: "Lexend", sans-serif;
+            font-weight: bold;
+            width: fit-content;
+            height: 1.7em;
+            cursor: pointer;
+        }
+        .button2 {
+            background-color: rgb(85, 134, 6);
+            color: black;
+            font-size: 1em;
+            font-family: "Lexend", sans-serif;
+            font-weight: bold;
+            width: fit-content;
+            height: 1.7em;
+            cursor: pointer;
+        }
+        .hidden {
+            display: none;
+        }
         .simulacrum {
             width: 85vw;
             height: 85vh;
@@ -46,19 +69,19 @@
             font-family: "Lexend", sans-serif;
             font-size: 1.5em;
             font-weight: 400;
-            display: none;
+            
         }
         .freehideaway {
             font-family: "Lexend", sans-serif;
             font-size: 1.5em;
             font-weight: 400;
-            display: none;
+            
         }
         .simhideaway {
             font-family: "Lexend", sans-serif;
             font-size: 1.5em;
             font-weight: 400;
-            display: none;
+            
         }
     
         #example1 {
@@ -170,10 +193,10 @@
                 To see fullscreen versions of the prompt images, click on each to open them in a new tab.
                 <br><br> 
 
-                 For Prompt One, 'What Am I Processing' Freewrite, <a href="javascrpt:;" onClick="document.getElementById('freehideaway').style.display='block';" class="green">please click here</a>
+                 For Prompt One, 'What Am I Processing' Freewrite, <button class="button" onClick="showPrompt1()">please click here</button>
 
             </p>
-            <div id="freehideaway" style="display: none;">
+            <div id="freehideaway" class="hidden" style="height: fit-content; width: 100%;">
                 <p class="prompt-desc">
                     Consider the images below. Sit with them for a minute or so, long enough to still your mind; try to notice any details that catch your eye, or any emotions the images evoke. <br>
                     When you are ready, open a new page or document and begin a stream of consciousness freewrite with the question, “What am I processing?” <br><br>
@@ -183,9 +206,9 @@
                 </p>
             </div>
             <p class="prompt-desc">
-                For Prompt Two, Building a Simulacrum, <a href="javascrpt:;" onClick="document.getElementById('simhideaway').style.display='block';" class="green">please click here</a> 
+                For Prompt Two, Building a Simulacrum, <button class="button" onClick="showPrompt2()">please click here</button>
             </p>
-            <div id="simhideaway" style="display: none;">
+            <div id="simhideaway" class="hidden" style="height: fit-content; width: 100%;">
                 <p class="prompt-desc">
                 Start by copying out the A.I. character synopsis below, roughly in the centre of a new document: <br><br>
 
@@ -195,9 +218,11 @@
                 <span class="two-a-tq-tab">A fabrication of itself. </span><br>
                 <span class="double-tab">Bringing life to a biome of wires.</span> <br> <br>
               
-              Next, consider the two images below and describe what you see, first literally, then figuratively. Write your literal observations above the character synopsis, and your figurative descriptions below it. To see a visual representation of this, with some examples, <a href="javascrpt:;" onClick="document.getElementById('literalhideaway').style.display='block';" class="green">please click here</a> 
+              Next, consider the two images below and describe what you see, first literally, then figuratively. 
+                    Write your literal observations above the character synopsis, and your figurative descriptions below it. 
+                    To see a visual representation of this, with some examples, <button class="button2" onClick="showExample()">please click here</button> 
             </p>
-            <div id="literalhideaway" style="display: none;">
+            <div id="literalhideaway" class="hidden" style="height: fit-content; width: 100%;">
                 <p class="prompt-desc">
                     <!-- For literal observations, Use short phrases, even single words; note down what colours you can see; what numbers or letters are easily readable within the code, etc. <br>
                      
@@ -211,7 +236,7 @@
                     For literal observations, use short phrases, even single words; note down what colours you can see; what numbers or letters are easily readable within the code, etc. <br><br>
                      
                     For figurative descriptions, note down any feeling or question these images raise for you. What do you think is happening? What emotions do you feel as you view them, etc.<br> 
-                    To hide these examples again, <a href="javascript:;" onClick="document.getElementById('literalhideaway').style.display='none';" class="green">please click here</a>
+                    To hide these examples again, <button class="button2" onClick="showExample()">please click here</button>
                 </p>
               </div> 
             <p class="prompt-desc">
@@ -226,7 +251,7 @@
                 It’s fine to use some words or phrases multiple times. 
                 The aim is to incapsulate the tone of Green World's A.I. trying to replicate human creativity. 
             -->
-                To hide Prompt Two again, <a href="javascript:;" onClick="document.getElementById('simhideaway').style.display='none';" class="green">please click here</a>
+                To hide Prompt Two again, <button class="button" onClick="showPrompt2()">please click here</button>
             </p>
             
             </div>
@@ -244,6 +269,17 @@
         <p class="bold-title">To return to the Homepage, <a href="./index.html">please click here</a></p> 
         
        
-        </div> 
+        </div>
+    <script>
+        const showPrompt1 = () => {
+   document.getElementById("freehideaway").classList.toggle('hidden');
+ }
+ const showPrompt2 = () => {
+   document.getElementById("simhideaway").classList.toggle('hidden');
+ }
+ const showExample = () => {
+   document.getElementById("literalhideaway").classList.toggle('hidden');
+ }
+    </script>
 </body>
 </html>
