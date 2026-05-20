@@ -86,25 +86,27 @@
    padding-left: 1em;
  }
 
-         .examplehideaway {
+         
+
+        .examplehideaway {
             font-family: "Lexend", sans-serif;
             font-size: 1.5em;
             font-weight: 400;
-            display: none;
+            
         }
 
         .hideaway {
             font-family: "Lexend", sans-serif;
             font-size: 1.5em;
             font-weight: 400;
-            display: none;
+            
         }
 
         .rhymehideaway {
             font-family: "Lexend", sans-serif;
             font-size: 1.5em;
             font-weight: 400;
-            display: none;
+            
         }
 
          .soulhideaway {
@@ -120,6 +122,21 @@
             font-weight: 400;
             display: none;
         }
+
+        .button {
+            background-color: rgb(249, 174, 34);
+            color: black;
+            font-size: 1em;
+            font-family: "Lexend", sans-serif;
+            font-weight: bold;
+            width: fit-content;
+            height: 1.7em;
+            cursor: pointer;
+        }
+
+        .hidden {
+            display: none;
+                            }
 
 
 
@@ -217,10 +234,10 @@
                 You can pause the audio at any time, using the Play / Pause button. You can also use the Rewind button to restart the track, or drag the progress slider to replay specific sections. <br>
                 <br>
 
-                For Part One, Finding Initial Ideas In Music, <a href="javascrpt:;" onClick="document.getElementById('soulhideaway').style.display='block';" class="red">please click here</a>
+                For Part One, Finding Initial Ideas In Music, <button class="button" onClick="showPrompt1()">please click here</button>
                 <br>
             </p>
-            <div id="soulhideaway" style="display: none;">
+            <div id="soulhideaway" class="hidden">
                     <p class="bold-title">Finding Initial Ideas In Music</p>
                     <p class="prompt-desc">
                         One of the best ways to find initial lyrics is to follow your instincts, either visually or melodically. <br>
@@ -271,7 +288,7 @@
 
                     </p> 
                     <p class="prompt-desc">
-                         To hide Part One again, <a href="javascript:;" onClick="document.getElementById('soulhideaway').style.display='none';" class="red">please click here</a>
+                         To hide Part One again, <button class="button" onClick="showPrompt1()">please click here</button>
                     </p>
                    
                 </div>
@@ -299,9 +316,9 @@
                     </div>  
                         -->
                     <p class="prompt-desc">
-                         For Part Two, Turning Ideas Into Lyrics, <a href="javascript:;" onClick="document.getElementById('rhymehideaway').style.display='block';" class="red">please click here</a> 
+                         For Part Two, Turning Ideas Into Lyrics, <button class="button" onClick="showPrompt2()">please click here</button>
                     </p>
-                <div id="rhymehideaway" style="display: none;">
+                <div id="rhymehideaway" class="hidden">
                     <p class="bold-title">Turning Ideas Into Lyrics</p>
                     <p class="prompt-desc">
                         Song lyrics do not have to rhyme. However, for this exercise we’re going to build lyrics around your chosen phrases, using a combination of perfect rhyme and half rhyme. These are two of the most common rhyme-types in songwriting. 
@@ -322,14 +339,21 @@
                     </p>
 
                     <p class="prompt-desc">
-                        <br> By using both, you combine the clarity of perfect rhymes with softer ones, which prevent your lyrics becoming forced or cliché. <br>
+                        <br> By using both, you combine the clarity of perfect rhymes with softer ones, which prevent your lyrics becoming too forced or cliché. <br>
 
-                        As a starting point, take one of your phrases and write 2-4 lines following the above template: combining the two rhyme-types in an ABAB rhyme scheme. <br> If that feels too restrictive, break away from it - try incorporating one perfect rhyme to start or end a series of half rhymes, or use a more complex rhyme scheme. <br><br>
-                        Once you have a few lyrics, try humming or singing them along to the instrumental. Syllable counting will be covered in future prompts, alongside more advanced structures and techniques, as you work towards a finished song. The aim for now is to get more comfortable writing lyrics to music. <br><br>
+                        As a starting point, select two of your phrases and create a rhyming couplet for each, following the above templates. First, using four perfect rhymes in an alternating, ABAB rhyme scheme, then using two half rhymes in an AA rhyme scheme. <br> <br>
 
+                        If you find this structure helpful, repeat it to create a verse of four to eight lines. <br>
+                        If it feels too restrictive, break away from it- try incorporating one perfect rhyme to start or end a series of half rhymes, or use a more complex rhyme scheme. <br><br>
+
+                        Once you have a verse or two, try humming or singing them along to the instrumental. Syllable counting will be covered in future prompts, alongside more advanced structures and techniques, as you work towards a finished song. 
+                        The aim for now is to get more comfortable writing lyrics to music, and exploring this form.<br><br>
+
+                        *Performers can bend the rules of rhyme, by manipulating factors such as accent, pronunciation and which vowel sounds are stressed. The definitions within this prompt are a technically-correct foundation, which you can build upon as your proficiency grows.  
+                        <br>
 
                         
-                        To hide Part Two again, <a href="javascript:;" onClick="document.getElementById('rhymehideaway').style.display='none';" class="red">please click here</a>
+                        To hide Part Two again, <button class="button" onClick="showPrompt2()">please click here</button>
                     </p>
 
             
@@ -441,6 +465,16 @@ I couldn’t even tell, I’ve never felt so sure.
 -->
 
      <script>
+
+    const showPrompt1 = () => {
+   document.getElementById("soulhideaway").classList.toggle('hidden');
+ }
+ const showPrompt2 = () => {
+   document.getElementById("rhymehideaway").classList.toggle('hidden');
+ }
+ const showExample = () => {
+   document.getElementById("literalhideaway").classList.toggle('hidden');
+ }
 
     let progress = document.getElementById("progress");
     let song = document.getElementById("song");
